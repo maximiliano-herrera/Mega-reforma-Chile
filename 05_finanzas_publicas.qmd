@@ -1,0 +1,85 @@
+---
+title: "Finanzas públicas: ingresos, gastos y balance"
+subtitle: "DIPRES · Gobierno Central Total · 1990–2025"
+---
+
+[Abrir el script R de esta página](05_finanzas_publicas.R).
+
+```{r}
+#| include: false
+knitr::read_chunk("05_finanzas_publicas.R")
+```
+
+```{r 05-finanzas-publicas-paso-1}
+#| include: false
+```
+
+
+## La pregunta
+
+¿Cómo evolucionaron los ingresos, gastos y el balance efectivo del Gobierno Central desde 1990? El orden fiscal forma parte del anuncio de marzo. [Fuente del alcance](https://www.interior.gob.cl/noticias/2026/03/14/presidente-jose-antonio-kast-presenta-proyecto-de-ley-de-reconstruccion-nacional-junto-a-ministro-alvarado/).
+
+```{r 05-finanzas-publicas-paso-2}
+#| include: false
+```
+
+::: {.callout-note title="Resultado calculado"}
+En 2025, los ingresos totales equivalen a **`r n(u$ingresos_pct_pib,1)`% del PIB** (**`r n(u$ingresos_millones_pesos_2025)` millones de pesos de 2025**); los gastos, a **`r n(u$gastos_pct_pib,1)`%** (**`r n(u$gastos_millones_pesos_2025)` millones**). El balance efectivo es **`r n(u$balance_pct_pib,1)`% del PIB** (**`r n(u$balance_millones_pesos_2025)` millones**). Un valor negativo indica déficit.
+:::
+
+## Ingresos y gastos como porcentaje del PIB
+
+```{r 05-finanzas-publicas-paso-3}
+#| fig-height: 5.5
+#| fig-alt: "Ingresos y gastos del Gobierno Central Total entre 1990 y 2025 como porcentaje del PIB; franjas con el nombre y rango de cada período presidencial."
+#| fig-cap: "Cada punto representa un año. El eje marca los inicios y finales de los períodos presidenciales; las franjas no prueban que un gobierno cause los cambios observados."
+```
+
+**Cómo leer el gráfico.** Las dos líneas expresan ingresos y gastos como porcentaje del PIB, lo que permite comparar su tamaño con el de la economía. En 2020 y 2021 la distancia se amplía porque los gastos superan ampliamente los ingresos; en 2022 los ingresos quedan por encima de los gastos; y entre 2023 y 2025 vuelve a observarse un déficit. Este indicador describe la magnitud fiscal relativa, pero no informa por sí solo si un gasto fue eficiente ni qué programa explica el cambio.
+
+## Ingresos y gastos en millones de pesos de 2025
+
+```{r 05-finanzas-publicas-paso-4}
+#| fig-height: 5.5
+#| fig-alt: "Ingresos y gastos del Gobierno Central Total entre 1990 y 2025 en millones de pesos de 2025; franjas con el nombre y rango de cada período presidencial."
+#| fig-cap: "Los montos se expresan en pesos de 2025 para hacer comparables los años. Las etiquetas indican los valores de 2025; la tabla anual conserva todos los montos."
+```
+
+**Cómo leer el gráfico.** Esta es la misma trayectoria expresada en dinero comparable entre años. En 2025, los ingresos alcanzan aproximadamente **73,4 billones de pesos de 2025** y los gastos **82,9 billones**. La diferencia frente al gráfico anterior es la unidad: aquí se observa el volumen real de recursos, mientras que el porcentaje del PIB muestra su peso relativo en la economía.
+
+## Balance efectivo
+
+```{r 05-finanzas-publicas-paso-5}
+#| fig-height: 6.5
+#| fig-width: 11
+#| fig-alt: "Barras anuales de balance efectivo entre 1990 y 2025, con franjas y rangos presidenciales; cada barra informa porcentaje del PIB y monto en billones de pesos de 2025."
+#| fig-cap: "Balance efectivo = préstamo neto / endeudamiento neto según DIPRES. Etiqueta de barra: porcentaje del PIB · billones de pesos de 2025; un billón equivale a un millón de millones. El año de cambio de mando se asigna al gobierno que inicia en marzo."
+```
+
+**Cómo leer el gráfico.** Una barra negativa representa déficit y una positiva, superávit. El balance fue de aproximadamente **−7,3% del PIB en 2020**, **−7,7% en 2021**, **+1,1% en 2022** y volvió a ser negativo entre 2023 y 2025, hasta **−2,8%**. Las franjas presidenciales solo ordenan la serie en el tiempo: no prueban que cada resultado haya sido causado por el gobierno indicado.
+
+## Serie anual completa
+
+```{r 05-finanzas-publicas-paso-6}
+```
+
+## Lectura y limitaciones
+
+El balance identifica una restricción presupuestaria relevante para discutir nuevas obligaciones o menores ingresos. Por sí solo no determina qué gasto recortar ni prueba que una rebaja tributaria se autofinancie.
+
+- Se usan **TOTAL INGRESOS**, **TOTAL GASTOS** y **PRÉSTAMO NETO/ENDEUDAMIENTO NETO** del mismo cuadro. Los totales incluyen operaciones de capital; no se confunden con las filas de ingresos y gastos corrientes.
+- Es Gobierno Central Total, no Gobierno General ni todo el sector público. No se incluye automáticamente el presupuesto de municipios o empresas públicas.
+- El balance efectivo no es el estructural. Tampoco es un nivel de deuda ni una proyección para 2026.
+- Los porcentajes cambian por su numerador y por el PIB. Los montos se expresan en pesos de 2025 para compararlos en términos reales. Estos gráficos no descomponen las causas ni cuantifican efectos de la pandemia.
+- Las franjas presidenciales ordenan temporalmente la serie. No identifican efectos causales de un gobierno: los resultados también dependen del ciclo económico, precios de recursos naturales, decisiones aprobadas en períodos previos y shocks externos.
+- La fuente es anual y los cambios de mando ocurren en marzo. Para ordenar la visualización, 1994, 2000, 2006, 2010, 2014, 2018 y 2022 se asignan al gobierno que inicia ese año; cada uno incluye meses de ambas administraciones.
+
+**Para evaluar el plan:** conciliar su informe financiero, calendario de implementación y fuentes de financiamiento, y medir efectos distributivos y sobre los servicios públicos.
+
+## Datos y fuente
+
+::: {.callout-note title="Procedencia del Excel en pesos de 2025"}
+El archivo local `dipres_gct_pesos_2025.xlsx` **no fue construido por este proyecto**. Es una copia renombrada del libro oficial GCT2 de DIPRES, que ya entrega la serie en millones de pesos de 2025. El procesamiento en R selecciona las filas de ingresos, gastos y balance, verifica que ingresos menos gastos coincida con el balance y genera el CSV utilizado por los gráficos; no aplica un deflactor propio.
+:::
+
+[CSV 1990–2025](datos/finanzas_publicas.csv) · [Procesamiento R](scripts/procesar_datos.R) · [Página DIPRES: estado de operaciones anuales](https://www.dipres.gob.cl/598/w3-propertyvalue-15494.html) · [Libro DIPRES en millones de pesos de 2025](https://www.dipres.gob.cl/598/articles-45401_doc_xls_GCT2.xlsx).

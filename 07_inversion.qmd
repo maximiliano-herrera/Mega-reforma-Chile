@@ -1,0 +1,82 @@
+---
+title: "Inversión: una referencia para la reactivación"
+subtitle: "Banco Central de Chile · Formación bruta de capital fijo · 2018–2025"
+---
+
+[Abrir el script R de esta página](07_inversion.R).
+
+```{r}
+#| include: false
+knitr::read_chunk("07_inversion.R")
+```
+
+```{r 07-inversion-paso-1}
+#| include: false
+```
+
+
+## La pregunta
+
+¿Qué proporción del PIB representa la inversión en activos fijos antes del plan? El anuncio de abril contempla estabilidad tributaria para proyectos de inversión. Esta serie ofrece contexto macroeconómico, no una estimación del efecto de ese incentivo. [Fuente del anuncio](https://msgg.gob.cl/wp/2026/04/23/presidente-kast-firma-proyecto-de-ley-del-plan-de-reconstruccion-nacional-y-desarrollo-economico-y-social/).
+
+```{r 07-inversion-paso-2}
+#| include: false
+```
+
+::: {.callout-note title="Resultado calculado"}
+En 2025, la formación bruta de capital fijo equivale a **`r n(d$fbcf_pct_pib[d$anio==2025],1)`% del PIB**, frente a **`r n(d$fbcf_pct_pib[d$anio==2024],1)`%** en 2024. La diferencia es en puntos porcentuales del PIB, no una tasa de crecimiento real de la inversión.
+:::
+
+## Formación bruta de capital fijo / PIB
+
+```{r 07-inversion-paso-3}
+#| fig-alt: "Relación entre formación bruta de capital fijo y PIB a precios corrientes; alcanza 24,1 por ciento en 2025."
+#| fig-cap: "Fuente: Banco Central, agregados de inversión en relación al PIB, referencia 2018. Precios corrientes."
+```
+
+**Cómo leer el gráfico.** La FBCF representó **23,0% del PIB en 2018**, alcanzó **25,7% en 2022** y llegó a **24,1% en 2025**. La serie muestra cuánto pesa la inversión en activos fijos dentro de la economía, pero una variación del cociente puede provenir de la FBCF, del PIB o de los precios de ambos; no equivale directamente al crecimiento real de la inversión.
+
+## Tasa legal e inversión física
+
+La FBCF no es una medida incluida literalmente en el plan. Se usa como contexto para las medidas de incentivo a la inversión, entre ellas la reducción gradual del impuesto corporativo y la invariabilidad tributaria para ciertas inversiones. La tasa corresponde al Impuesto de Primera Categoría; desde 2017 coexistieron regímenes, por lo que el gráfico muestra la tasa general en un panel separado.
+
+```{r 07-inversion-paso-4}
+#| fig-height: 7
+#| fig-alt: "Dos series anuales separadas: FBCF como porcentaje del PIB y tasa general legal de Primera Categoría entre 2013 y 2025."
+#| fig-cap: "Fuentes: Banco Central de Chile para FBCF y SII para tasas legales. Los paneles se mantienen separados porque los porcentajes usan denominadores distintos."
+```
+
+**Cómo leer el gráfico.** La tasa legal general subió gradualmente hasta **27% en 2020** y permaneció en ese nivel hasta 2025. Durante esos mismos años, la FBCF varió entre **22,6% y 25,7% del PIB**. Que la inversión cambie mientras la tasa legal permanece igual muestra que no existe una relación mecánica de uno a uno: también influyen la actividad económica, el costo del financiamiento, la incertidumbre y otros factores.
+
+## Asociación descriptiva
+
+Cada punto representa un año. Esta forma de visualizar permite observar si los años con cierta tasa legal coincidieron con niveles distintos de FBCF, pero **no permite concluir que la tasa causó ese nivel de inversión**.
+
+```{r 07-inversion-paso-5}
+#| fig-height: 5.5
+#| fig-alt: "Gráfico de dispersión que relaciona la tasa general legal de Primera Categoría y FBCF como porcentaje del PIB; cada punto está etiquetado con su año."
+#| fig-cap: "Fuentes: Banco Central de Chile y SII. Comparación descriptiva de 13 años, sin identificación causal."
+```
+
+**Cómo leer el gráfico.** La mayoría de los puntos de 2020 a 2025 comparte una tasa legal de **27%**, pero presenta distintos niveles de FBCF. Esta dispersión indica que la tasa corporativa, por sí sola, no basta para explicar la inversión observada. El gráfico permite describir coincidencias entre ambas variables, pero no estimar el efecto causal de subir o reducir el impuesto.
+
+## Lectura y limitaciones
+
+El indicador relaciona la adquisición de activos fijos con el tamaño de la economía. Una variación puede deberse a cambios de inversión, del PIB o de precios relativos; no identifica obstáculos regulatorios por sí sola.
+
+- Se usa la serie a **precios corrientes** y se evita mezclarla con la relación a precios del año anterior encadenados que también aparece en la tabla.
+- No es inversión extranjera directa ni ejecución presupuestaria. Es un agregado de la economía y no separa los proyectos alcanzados por el plan.
+- El HTML oficial guarda valores con un decimal. Se respeta esa precisión y no se presenta exactitud adicional ficticia.
+- Las cuentas nacionales están sujetas a revisiones. La descarga preserva la versión usada; no se atribuyen movimientos hasta 2025 a una propuesta de 2026.
+- Desde 2017 existen regímenes con tasas distintas. La comparación utiliza la tasa general y conserva las tasas alternativas en el archivo de datos; no construye un promedio no ponderado de regímenes.
+- Trece observaciones anuales no bastan para separar el rol de la tasa legal de cambios simultáneos en actividad, precios, incertidumbre, inversión pública o condiciones internacionales.
+
+**Para evaluar los incentivos:** se necesitan expedientes y montos de proyectos, plazos de permisos, elegibilidad, costo tributario y una estrategia de comparación que separe el efecto del plan del ciclo económico.
+
+## Datos y fuente
+
+::: {.callout-note title="Cómo se construyó el Excel de cruce"}
+El archivo `impuesto_corporativo_fbcf.xlsx` fue **elaborado dentro de este proyecto** y no corresponde a una publicación descargada de una institución. Se unieron por año la relación FBCF/PIB extraída de la tabla oficial del Banco Central y la tasa legal general de Primera Categoría publicada por el SII. También se conservaron las tasas alternativas y notas sobre los regímenes tributarios cuando correspondía. No se interpolaron años, no se promediaron tasas de regímenes distintos y no se estimó un efecto causal. El Excel funciona como copia de auditoría; los gráficos leen el CSV reproducible generado por R.
+:::
+
+[CSV FBCF 2013–2025](datos/inversion.csv) · [Cruce FBCF y tasas legales](datos/impuesto_fbcf.csv) · [Excel de auditoría construido por el proyecto](07_inversion/impuesto_corporativo_fbcf.xlsx) · [Procesamiento R](scripts/procesar_datos.R) · [Tabla del Banco Central](https://si3.bcentral.cl/Siete/Es/Siete/Cuadro/CAP_CCNN/MN_CCNN76/CCNN2018_G3_RPIB_A/637801697822047501) · [Tasas históricas del SII](https://www.sii.cl/preguntas_frecuentes/declaracion_renta/001_140_4708.htm).

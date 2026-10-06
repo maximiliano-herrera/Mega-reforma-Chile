@@ -1,0 +1,105 @@
+---
+title: "Vivienda: evolución nacional y diferencias regionales"
+subtitle: "MINVU · Censos 2002, 2017 y 2024 · Series con metodología abreviada"
+---
+
+[Abrir el script R de esta página](06_vivienda.R).
+
+```{r}
+#| include: false
+knitr::read_chunk("06_vivienda.R")
+```
+
+```{r vivienda-preparacion}
+#| include: false
+```
+
+```{r vivienda-datos}
+#| include: false
+```
+
+## Qué estamos comparando
+
+¿Cómo evolucionaron los requerimientos de nuevas viviendas? Comparamos el país y después las 16 regiones. Todo el análisis usa exclusivamente la **metodología abreviada** del cuadro MINVU, que permite comparar 2002, 2017 y 2024.
+
+| Concepto | Cómo leerlo |
+|---|---|
+| Déficit habitacional cuantitativo | Requerimientos de nuevas viviendas identificados por la metodología. Incluye viviendas irrecuperables, hogares allegados, núcleos allegados hacinados y viviendas con hacinamiento no ampliable. No equivale a restar viviendas a hogares. |
+
+Definiciones y versiones metodológicas: [MINVU](https://catalogo.minvu.cl/cgi-bin/koha/opac-retrieve-file.pl?id=e0ccd280c209491477b8c3cef57910b4). La hoja “Presentación” del Excel describe los componentes y registra la corrección del 4 de diciembre de 2025.
+
+::: {.callout-note title="Cómo interpretar las líneas y los porcentajes"}
+Solo hay **tres observaciones censales**. Los puntos son los datos; las líneas discontinuas los conectan, sin estimar los años intermedios. El eje respeta los intervalos de **15 años** y **7 años**.
+
+Cada gráfico especifica su porcentaje: la evolución nacional muestra la variación frente al censo previo; los gráficos territoriales muestran la participación en el déficit nacional del mismo año.
+:::
+
+## Evolución nacional
+
+### Déficit habitacional total
+
+```{r vivienda-nacional-deficit}
+#| fig-height: 4.8
+#| fig-alt: "Déficit abreviado: 648.271 en 2002, 467.751 en 2017 y 419.875 en 2024; las etiquetas incluyen la variación frente al censo anterior."
+#| fig-cap: "Variación (%) = 100 × (déficit del censo actual / déficit del censo anterior − 1). En 2002 no se calcula variación porque no hay un censo previo en la serie."
+```
+
+**Cómo leer el gráfico.** El déficit abreviado pasa de **`r n(nacional$deficit[1])`** a **`r n(nacional$deficit[3])`** entre 2002 y 2024: una variación acumulada de **`r n(100*(nacional$deficit[3]/nacional$deficit[1]-1),1)`%**. Entre 2017 y 2024 cambia **`r n(nacional$variacion_deficit_pct[3],1)`%**. La reducción del total representa menos requerimientos medidos por la misma metodología; no significa necesariamente que se hayan construido exactamente tantas viviendas.
+
+## Déficit habitacional por región
+
+La comparación se concentra en los dos censos más recientes. Cada par de barras corresponde a la misma región y muestra el **total de déficit habitacional** de 2017 y 2024. La etiqueta combina la cantidad y la participación de esa región en el déficit nacional del mismo año.
+
+```{r vivienda-regional-2017-2024}
+#| fig-height: 9
+#| fig-alt: "Barras agrupadas para las 16 regiones en 2017 y 2024; cada etiqueta indica el total de déficit y el porcentaje del déficit nacional del mismo año."
+#| fig-cap: "Etiqueta: requerimientos · 100 × déficit regional / déficit nacional del mismo año. Las participaciones de las 16 regiones suman 100% antes del redondeo."
+```
+
+**Cómo leer el gráfico.** Aunque el total nacional disminuyó entre 2017 y 2024, la Región Metropolitana aumentó de **198.838** a **210.493 requerimientos** y su participación en el déficit nacional pasó de aproximadamente **42,5% a 50,1%**. El número de requerimientos y la concentración territorial responden preguntas distintas: una región puede concentrar una gran fracción del total por su tamaño, sin ser necesariamente la que presenta el mayor problema proporcional respecto de su población u hogares.
+
+::: {.callout-important title="Comparabilidad territorial"}
+El cuadro MINVU distribuye los tres censos entre las mismas **16 etiquetas regionales**, incluidas Ñuble, Biobío, Arica y Parinacota y Los Ríos. Usamos esa agrupación publicada; no mezclamos los totales con antiguas divisiones regionales.
+
+Se verificó que, en cada año, viviendas, hogares y déficit de las comunas asignadas por el libro a cada región suman su fila regional, y que las regiones suman el país. Es una comprobación interna del cuadro, no una auditoría cartográfica independiente de todos los cambios de límites comunales. Las cifras históricas bajo estas etiquetas no implican que todas esas regiones existieran administrativamente en 2002.
+:::
+
+## Comunas con mayor aumento del déficit
+
+La comparación pasa ahora al nivel comunal. Seleccionamos las diez comunas cuyo **déficit habitacional total aumentó más en cantidad absoluta** entre 2017 y 2024. La selección no se hace por porcentaje, porque variaciones porcentuales altas sobre cifras muy pequeñas pueden ocultar el número de requerimientos involucrado.
+
+Cada par de barras compara la misma comuna, identificada por su código INE en el procesamiento. La etiqueta combina el número de requerimientos y el porcentaje que representa del déficit nacional en el mismo censo.
+
+```{r vivienda-comunal-top-aumentos}
+#| fig-height: 7.5
+#| fig-alt: "Barras agrupadas para 2017 y 2024 en las diez comunas con mayor aumento absoluto del déficit habitacional; cada etiqueta indica requerimientos y porcentaje del déficit nacional."
+#| fig-cap: "Selección: diez aumentos absolutos más grandes de déficit entre 2017 y 2024. Etiqueta: requerimientos · 100 × déficit comunal / déficit nacional del mismo año."
+```
+
+**Cómo leer el gráfico.** Cada par de barras compara la misma comuna en 2017 y 2024. El ranking se determina por el **aumento en número de requerimientos**, no por su tasa porcentual; por ello, las comunas grandes tienen más posibilidades de aparecer aunque su deterioro proporcional no sea el mayor. La etiqueta porcentual muestra cuánto representa cada comuna dentro del déficit nacional del año correspondiente.
+
+La lista describe los mayores aumentos observados, pero no identifica una causa. Un aumento puede combinar cambios en el número y composición de hogares, hacinamiento, allegamiento, condiciones de las viviendas y el modo en que el Censo mide esos componentes. Para evaluar una política específica habría que incorporar precios, oferta de viviendas, ingresos, migración, permisos y ejecución de programas en cada comuna.
+
+## Precauciones y alcance
+
+- Las cantidades representan requerimientos de nuevas viviendas; no representan personas ni transacciones inmobiliarias.
+- Una reducción del déficit no significa que se hayan construido exactamente tantas viviendas: también cambian los hogares, su composición y sus condiciones de habitabilidad.
+- Las cifras describen censos. No identifican qué parte del cambio produjo un gobierno, un subsidio u otra política; tampoco permiten atribuir resultados al plan de 2026.
+- La comparación mantiene una misma metodología. Los porcentajes se calculan con los valores sin redondear y se muestran con un decimal.
+- Este diagnóstico no identifica damnificados por incendios de 2026, obras pendientes, precios de vivienda nueva ni capacidad de pago. No estima el efecto de una reducción del IVA.
+- Para evaluar medidas concretas faltan catastros, avance de obras, costos, precios, acceso al crédito y una estrategia de comparación causal.
+
+## Datos y reproducción
+
+[Serie nacional abreviada](datos/vivienda_nacional_abreviada.csv) · [Serie regional abreviada](datos/vivienda_regional_abreviada.csv) · [Serie comunal abreviada](datos/vivienda_comunal_abreviada.csv) · [Procesamiento de vivienda en R](scripts/procesar_vivienda.R) · [Tablas institucionales MINVU](https://centrodeestudios.minvu.gob.cl/repositorio/deficit-habitacional-cuantitativo-censal/).
+
+El procesamiento lee la hoja **“2024 2017 2002 Abreviada”**, conserva los totales nacionales, regionales y comunales, y comprueba además la suma de los cuatro componentes del déficit. El original permanece en `06_vivienda/datos_originales/minvu_censos.xlsx`. Para reconstruir las tres series, ejecutar desde el proyecto:
+
+```r
+source("scripts/procesar_vivienda.R", encoding = "UTF-8")
+procesar_vivienda()
+```
+
+Para explorar sin generar la web, abrir **06_vivienda.R** y pulsar **Source**. Las tablas quedan como `nacional`, `regional` y `comunal`; `View(top_aumentos_comunales)` muestra la selección y sus cálculos. Los gráficos aparecen en **Plots**. Render genera una vista local y no publica en GitHub.
+
+La capa geográfica conservada de una consulta anterior no se usa: su total de 479.031 no conciliaba con el libro. Esta ampliación utiliza exclusivamente las tablas del Excel.

@@ -1,0 +1,91 @@
+---
+title: "Fonasa: evolución de beneficiarios"
+subtitle: "Contexto complementario del proyecto · Cortes de diciembre, 2021–2025"
+---
+
+[Abrir el script R de esta página](02_salud_fonasa.R).
+
+```{r}
+#| include: false
+knitr::read_chunk("02_salud_fonasa.R")
+```
+
+```{r 02-salud-fonasa-paso-1}
+#| include: false
+```
+
+
+## La pregunta
+
+¿Cómo cambió el volumen de beneficiarios de Fonasa? Se conserva el pilar de salud iniciado en Gemini, con un alcance ajustado a lo que efectivamente contienen los archivos.
+
+```{r 02-salud-fonasa-paso-2}
+#| include: false
+```
+
+::: {.callout-note title="Resultado calculado"}
+Los conteos de los archivos pasan de **`r n(t$beneficiarios[t$anio==2021])`** en diciembre de 2021 a **`r n(t$beneficiarios[t$anio==2025])`** en diciembre de 2025, una variación de **`r n(100*(tail(t$beneficiarios,1)/head(t$beneficiarios,1)-1),1)`%**.
+:::
+
+## Evolución del total
+
+```{r 02-salud-fonasa-paso-3}
+#| fig-alt: "El total agregado de beneficiarios de Fonasa aumenta entre diciembre de 2021 y diciembre de 2025; cada punto tiene su conteo escrito."
+#| fig-cap: "Fuente: archivos Fonasa aportados al proyecto; suma de conteos por categorías. Cada etiqueta es un número de beneficiarios."
+```
+
+**Cómo leer el gráfico.** El registro aumenta todos los años de la serie: pasa de 15.233.814 beneficiarios en 2021 a 17.132.611 en 2025, un alza de 12,5%. Es un conteo de personas registradas al cierre de diciembre. No mide cuántas atenciones recibieron ni demuestra que el aumento provenga de personas que dejaron una Isapre.
+
+## Composición por tramo
+
+Los paneles permiten comparar los cinco cortes de diciembre dentro de cada tramo, sin sumar visualmente segmentos. Cada barra muestra un número de beneficiarios, no un porcentaje ni un flujo entre tramos.
+
+```{r 02-salud-fonasa-paso-4}
+#| fig-width: 11
+#| fig-height: 11
+#| fig-alt: "Cuatro paneles de barras horizontales, uno por tramo Fonasa, con los conteos de beneficiarios de 2021 a 2025 escritos al final de cada barra."
+#| fig-cap: "Tramos administrativos de Fonasa. Cada barra y etiqueta muestran una cantidad de beneficiarios al cierre de diciembre; no representan flujos entre tramos."
+```
+
+**Cómo leer el gráfico.** El tramo B es el grupo más numeroso y también el que más crece en términos absolutos: pasa de 6.001.917 a 7.002.990 beneficiarios. Los cuatro paneles deben leerse como fotografías anuales de cada tramo. Una persona puede cambiar de tramo entre mediciones, pero estos archivos agregados no permiten seguir ese recorrido individual.
+
+## Movimientos de contratos Isapre
+
+Las suscripciones y los **términos de contratos** son movimientos registrados durante el año. “Término de contrato” reemplaza la etiqueta administrativa “desahucio”: no atribuye una causa, no supone que la decisión fue voluntaria y no permite identificar el destino de la persona. El saldo neto es la resta entre ambos movimientos.
+
+```{r 02-salud-fonasa-paso-6}
+#| fig-width: 10
+#| fig-height: 5
+#| fig-alt: "Líneas de suscripciones y términos de contratos Isapre entre 2018 y 2025."
+#| fig-cap: "Fuente: libro de cartera Isapres aportado al proyecto. Las líneas representan movimientos de contratos registrados durante cada año."
+```
+
+**Cómo leer el gráfico.** Hasta 2021 las suscripciones y los términos se mantienen relativamente próximos. Desde 2022 los términos superan a las suscripciones; en 2025 se registran 170.363 suscripciones y 210.766 términos. “Término” no significa necesariamente abandono voluntario ni traslado a Fonasa: la base agregada no entrega la causa ni el destino.
+
+### Saldo neto de contratos Isapre
+
+```{r 02-salud-fonasa-paso-7}
+#| fig-width: 10
+#| fig-height: 5
+#| fig-alt: "Barras del saldo neto anual de contratos Isapre entre 2018 y 2025."
+#| fig-cap: "Fuente: elaboración propia con el libro de cartera Isapres. Saldo neto = suscripciones menos términos de contratos."
+```
+
+**Cómo leer el gráfico.** Una barra positiva indica más suscripciones que términos durante el año; una barra negativa indica lo contrario. El saldo fue negativo desde 2022 y llegó a −40.403 contratos en 2025. Este saldo resume movimientos administrativos anuales y puede no coincidir exactamente con el cambio del stock de cotizantes entre dos cierres.
+
+## Lectura y limitaciones
+
+El aumento describe un mayor volumen de cobertura registrado. **No demuestra migración desde Isapres**, mayor uso de prestaciones ni insuficiencia presupuestaria. Para medir cambios individuales se necesita un registro longitudinal compatible o estadísticas oficiales de altas y bajas por origen.
+
+- Los CSV tienen conteos agregados por categorías; las filas no representan personas individuales. No incluyen una renta imponible individual para desarrollar el análisis propuesto inicialmente.
+- Las claves repetidas detectadas en 2018–2020 requieren aclaración documental. Esos años se conservan y auditan, pero **se excluyen de los gráficos**, sin eliminar registros de los originales.
+- Se homologaron los nombres de tramo y conteo para 2021–2025. No se detectaron claves repetidas ni conteos faltantes o negativos en esos cinco archivos. Esto es una validación interna, no una certificación externa de cobertura.
+- No se restan los stocks de Fonasa e Isapres para estimar flujos. El libro de Isapres permanece disponible en la carpeta original para una futura conciliación.
+- El gráfico de Isapres muestra movimientos agregados de contratos. No permite seguir a una persona entre sistemas, identificar la causa de cada término ni probar que un término termine en Fonasa.
+- Esta sección es contexto del proyecto previo, no una evaluación sanitaria ni causal del plan de 2026.
+
+## Datos y trazabilidad
+
+[CSV por tramo](datos/fonasa_tramos.csv) · [Movimientos Isapres](datos/isapres_movimientos.csv) · [Auditoría de los ocho archivos](datos/auditoria_fonasa.csv) · [Procesamiento R](scripts/procesar_datos.R) · [Portal de datos abiertos de Fonasa](https://datosabiertos.fonasa.cl/dimensiones-beneficiarios/).
+
+Los originales fueron aportados por el autor. Falta conciliar cada edición con su descarga institucional exacta; los totales se presentan como sumas de esos archivos. El diccionario disponible no coincide plenamente con sus columnas.

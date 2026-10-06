@@ -1,2 +1,9 @@
 /.quarto/
-.Rproj.user
+.Rproj.user/
+.Rhistory
+.RData
+02_salud_fonasa/*.csv
+02_salud_fonasa/*.xlsx
+**/.DS_Store
+07_inversion/*.inspect.ndjson
+01_empleo_publico/01_empleo_publico.qmd

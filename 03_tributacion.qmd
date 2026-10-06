@@ -1,0 +1,93 @@
+---
+title: "Tributación: la base del debate"
+subtitle: "SII · 2009–2025 · Recaudación, composición y Primera Categoría"
+---
+
+[Abrir el script R de esta página](03_tributacion.R).
+
+```{r}
+#| include: false
+knitr::read_chunk("03_tributacion.R")
+```
+
+```{r 03-tributacion-paso-1}
+#| include: false
+```
+
+
+## La pregunta
+
+¿Cuál era la recaudación antes de las propuestas de rebaja tributaria? El anuncio de abril plantea reducir la tasa corporativa de 27% a 23%. La recaudación agregada contextualiza la discusión, pero no calcula el efecto de cambiar esa tasa. [Fuente del anuncio](https://msgg.gob.cl/wp/2026/04/23/presidente-kast-firma-proyecto-de-ley-del-plan-de-reconstruccion-nacional-y-desarrollo-economico-y-social/).
+
+```{r 03-tributacion-paso-2}
+#| include: false
+```
+
+::: {.callout-note title="Resultado calculado"}
+En 2025, el total de ingresos tributarios de esta tabla equivale a **`r n(u$total,2)`% del PIB**. Renta representa **`r n(u$renta,2)`%** e IVA **`r n(u$iva,2)`%**. Primera Categoría equivale a **`r n(u$primera_categoria,2)`% del PIB** y a **`r n(u$primera_categoria_pct_renta,1)`% de Renta**. Son cifras preliminares.
+:::
+
+## Recaudación agregada, 2018–2025
+
+Las etiquetas de este gráfico indican qué porcentaje del PIB representa cada serie en cada año. Mantiene la vista agregada para situar Renta, IVA y el total.
+
+```{r 03-tributacion-paso-3}
+#| fig-alt: "Series de recaudación total, renta e IVA como porcentaje del PIB entre 2018 y 2025; el total alcanza un máximo del período en 2022."
+#| fig-cap: "Fuente: SII, serie 2009–2025, hoja Consolidados. 2024 provisional; 2025 preliminar."
+```
+
+**Cómo leer el gráfico.** El total cae de 18,2% del PIB en 2018 a 16,1% en 2020, alcanza 21,3% en 2022 y termina en 17,8% en 2025. Renta fluctúa más que IVA y explica buena parte del máximo de 2022. Como todas las líneas dividen por el PIB, una variación puede reflejar cambios en la recaudación, en el tamaño de la economía o en ambos.
+
+## Primera Categoría: referencia más próxima al impuesto corporativo
+
+Primera Categoría es un componente de Renta y es la referencia institucional más cercana a la tributación corporativa. Las etiquetas muestran su porcentaje del PIB; no son una estimación del costo de cambiar una tasa legal.
+
+```{r 03-tributacion-paso-4}
+#| fig-height: 5.2
+#| fig-alt: "Serie anual de Impuesto de Primera Categoría como porcentaje del PIB entre 2009 y 2025, con una etiqueta porcentual en cada punto."
+#| fig-cap: "Fuente: SII, serie 2009–2025, hoja Consolidados. Cada etiqueta es porcentaje del PIB; 2024 provisional y 2025 preliminar."
+```
+
+**Cómo leer el gráfico.** Primera Categoría no sigue una trayectoria estable: en los años recientes pasa de 2,8% del PIB en 2021 a 4,7% en 2022 y 4,0% en 2025. La serie registra recaudación efectiva y no la tasa legal del impuesto. Por eso no permite calcular cuánto recaudaría una tasa de 23% mediante una regla proporcional simple.
+
+## Composición del total tributario
+
+Aquí el denominador cambia: **cada barra suma 100% de la recaudación tributaria total del año**, no 100% del PIB. Esto permite ver cuánto pesa IVA, Primera Categoría, el resto de Renta y los demás impuestos dentro del total.
+
+```{r 03-tributacion-paso-5}
+#| fig-width: 11
+#| fig-height: 6
+#| fig-alt: "Barras apiladas anuales que suman 100% y muestran la participación de IVA, Primera Categoría, otros impuestos a la renta y otros impuestos."
+#| fig-cap: "Fuente: elaboración propia con la hoja Consolidados del SII. Cada barra suma 100% del total tributario de su año; 2024 provisional y 2025 preliminar."
+```
+
+**Cómo leer el gráfico.** En 2025, IVA representa aproximadamente 47,1% del total tributario, Primera Categoría 22,3%, otros impuestos a la renta 19,7% y los demás impuestos 10,9%. El gráfico compara composición, no montos: un componente puede aumentar su participación aunque su recaudación no crezca, si los otros componentes caen más.
+
+## Peso de Primera Categoría dentro de Renta
+
+Este último gráfico usa otro denominador: muestra qué parte de la recaudación de **Renta** corresponde a Primera Categoría. Ayuda a separar esa referencia del total de Renta, que también incorpora otros componentes.
+
+```{r 03-tributacion-paso-6}
+#| fig-height: 5.2
+#| fig-alt: "Serie anual del porcentaje que representa Primera Categoría dentro de la recaudación de Renta, con etiqueta porcentual en cada punto."
+#| fig-cap: "Fuente: elaboración propia con la hoja Consolidados del SII. Cada etiqueta es porcentaje de Renta; 2024 provisional y 2025 preliminar."
+```
+
+**Cómo leer el gráfico.** Primera Categoría aporta 53,0% de la recaudación clasificada como Renta en 2025, pero esa proporción cambia mucho entre años: fue 67,5% en 2020 y 35,4% en 2021. Esto confirma que “Renta” contiene más componentes y que no debe tratarse como sinónimo de impuesto corporativo.
+
+## Lectura y limitaciones
+
+La serie varía entre años: una recaudación mayor no prueba una tasa legal mayor y una caída no identifica su causa. Cambian las bases tributarias, la actividad, las devoluciones y el PIB usado como denominador.
+
+- **Renta no es solo impuesto corporativo.** No se multiplica toda la recaudación de renta por la reducción propuesta: eso produciría un costo fiscal engañoso.
+- **Primera Categoría tampoco mide por sí sola el efecto de la propuesta.** Es una referencia de recaudación, no la base gravada, el universo de contribuyentes afectados ni el costo fiscal de una reducción de tasa.
+- Se usa la fila **TOTAL INGRESOS TRIBUTARIOS**, que el libro distingue de **INGRESOS TRIBUTARIOS NETOS**, ajustada además por cuentas no tributarias. No se mezclan las dos filas.
+- Los valores originales están almacenados como fracción del PIB; el código los multiplica por 100. IVA corresponde al agregado de la tabla, no a la fila de IVA bruto.
+- En el gráfico de composición, **Otros impuestos a la renta = Renta − Primera Categoría** y **Otros impuestos = Total − Renta − IVA**. Los cuatro componentes se verifican para que sumen 100% en cada año.
+- No hay distribución del beneficio por hogar o empresa ni estimación causal sobre empleo o inversión.
+
+**Para evaluar la medida:** incorporar el informe financiero, base gravada y regímenes afectados; luego comparar escenarios explícitos, con sensibilidad de la respuesta de inversión y recaudación.
+
+## Datos y fuente
+
+[Descargar CSV 2009–2025](datos/tributacion.csv) · [Procesamiento R](scripts/procesar_datos.R) · [Serie de ingresos tributarios del SII](https://www.sii.cl/sobre_el_sii/serie_de_ingresos_tributarios.html).
