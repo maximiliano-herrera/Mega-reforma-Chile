@@ -84,7 +84,9 @@ El balance identifica una restricción presupuestaria relevante para discutir nu
 - Las franjas presidenciales ordenan temporalmente la serie. No identifican efectos causales de un gobierno: los resultados también dependen del ciclo económico, precios de recursos naturales, decisiones aprobadas en períodos previos y shocks externos.
 - La fuente es anual y los cambios de mando ocurren en marzo. Para ordenar la visualización, 1994, 2000, 2006, 2010, 2014, 2018 y 2022 se asignan al gobierno que inicia ese año; cada uno incluye meses de ambas administraciones.
 
-**Para evaluar el plan:** conciliar su informe financiero, calendario de implementación y fuentes de financiamiento, y medir efectos distributivos y sobre los servicios públicos.
+::: {.callout-note collapse="true" title="Preguntas que estos datos dejan abiertas"}
+¿Cuál es el costo fiscal del articulado, cuándo se materializa y cómo se financiaría? También falta medir quién recibe los beneficios y qué efectos habría sobre los servicios públicos. El balance efectivo histórico no reemplaza el informe financiero ni el balance estructural.
+:::
 
 ## Datos y fuente
 

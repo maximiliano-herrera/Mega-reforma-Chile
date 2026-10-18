@@ -42,7 +42,7 @@ marcas_periodos <- c(1990, 1994, 2000, 2006, 2010, 2014, 2018, 2022, 2025)
 tabla_anual <- d |>
   transmute(
     periodo = periodo_presidencial,
-    anio,
+    anio = as.character(anio),
     ingresos_pct_pib,
     ingresos_millones_pesos_2025,
     gastos_pct_pib,

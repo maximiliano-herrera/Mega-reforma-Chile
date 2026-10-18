@@ -22,6 +22,44 @@ knitr::read_chunk("index.R")
 **Versión analizada:** anuncios oficiales del Plan de Reconstrucción Nacional de marzo y abril de 2026. **Última revisión del sitio:** 18 de octubre de 2026. El análisis es descriptivo e independiente: no estima efectos causales ni respalda las propuestas.
 :::
 
+::: {.callout-tip title="No tienes que creerme: puedes verificarlo"}
+Cada análisis enlaza la **fuente disponible**, el dato depurado y el código R que produce sus resultados. Cuando no existe una URL exacta del archivo original o queda una conciliación pendiente, la página lo declara expresamente.
+
+::: cadena-verificacion
+**Fuente disponible** → **dato depurado** → **código R** → **gráfico o tabla** → **límite de la conclusión**
+:::
+:::
+
+## Cuatro hallazgos para comenzar
+
+Estas cifras resumen antecedentes previos al plan. Orientan preguntas; no prueban el efecto de ninguna propuesta.
+
+::: hallazgos
+::: hallazgo
+### Vivienda
+
+El déficit habitacional abreviado bajó de **`r n(vivienda_portada$deficit[vivienda_portada$anio==2002])`** a **`r n(vivienda_portada$deficit[vivienda_portada$anio==2024])`** requerimientos entre 2002 y 2024: **`r n(abs(reduccion_deficit_vivienda),1)`% menos**.
+:::
+
+::: hallazgo
+### Empleo
+
+En 2025, la tasa de ocupación masculina superó a la femenina en **`r n(brecha_ocupacion_sexo,1)` puntos porcentuales**. La desocupación fue **`r n(empleo_portada$desocupacion_pct[empleo_portada$sexo=='Hombres'],1)`%** en hombres y **`r n(empleo_portada$desocupacion_pct[empleo_portada$sexo=='Mujeres'],1)`%** en mujeres.
+:::
+
+::: hallazgo
+### Tributación
+
+En 2025, Primera Categoría equivalió a **`r n(tributacion_portada$primera_categoria,2)`% del PIB** y a **`r n(primera_categoria_total,1)`% de la recaudación tributaria** de la tabla del SII.
+:::
+
+::: hallazgo
+### Finanzas públicas
+
+En 2025, el balance efectivo del Gobierno Central Total fue **`r n(finanzas_portada$balance_pct_pib,1)`% del PIB**, equivalente a **`r n(finanzas_portada$balance_millones_pesos_2025/1e6,1)` billones de pesos de 2025**.
+:::
+:::
+
 ## Explorar los análisis
 
 ::: cards
@@ -56,9 +94,9 @@ Formación bruta de capital fijo. Una referencia para examinar la reactivación.
 :::
 
 ::: card-tema
-### [Capacidad estatal](01_empleo_publico.qmd) y [salud](02_salud_fonasa.qmd)
+### Contexto complementario
 
-Continuidad del trabajo original sobre empleo público y beneficiarios de Fonasa.
+[Empleo público](01_empleo_publico.qmd) y [salud](02_salud_fonasa.qmd) conservan antecedentes del trabajo original. No se presentan como evaluaciones directas de las medidas del plan.
 :::
 :::
 

@@ -8,12 +8,18 @@ h1,h2,h3 { color: var(--azul); }
 .card-tema { border: 1px solid #d7dfe9; border-radius: 8px; padding: 1.1rem 1.3rem; background: #fff; }
 .card-tema h3 { font-size: 1.18rem; margin: 0 0 .5rem; }
 .card-tema p { margin-bottom: .4rem; font-size: .95rem; }
+.hallazgos { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; margin: 1.2rem 0 2rem; }
+.hallazgo { border: 1px solid #d7dfe9; border-top: 4px solid #1a365d; border-radius: 8px; padding: 1rem 1.2rem; background: #fff; }
+.hallazgo h3 { font-size: 1.12rem; margin: 0 0 .45rem; }
+.hallazgo p { margin-bottom: .25rem; }
+.cadena-verificacion { margin-top: .8rem; padding: .75rem 1rem; background: #fff; border: 1px solid #c8d5e5; border-radius: 6px; line-height: 1.8; }
 table { font-size: .9rem; }
 .cell-output-display { max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .cell-output-display img { max-width: 100%; height: auto; }
 details.code-fold { margin-bottom: .8rem; }
 @media(max-width:650px) {
   .cards { grid-template-columns: 1fr; }
+  .hallazgos { grid-template-columns: 1fr; }
   .hero { padding: 1rem; }
   h1.title { font-size: 1.85rem; }
   .quarto-title .subtitle { font-size: 1rem; }

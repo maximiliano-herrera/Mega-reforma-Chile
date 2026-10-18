@@ -48,14 +48,3 @@ print(ggplot(serie_cruce,aes(anio,porcentaje))+
     subtitle='Dos porcentajes con denominadores distintos; lectura descriptiva',
     x=NULL,y='Porcentaje'))
 
-## ---- 07-inversion-paso-5
-# Dispersión: cada punto representa un año; sirve para observar asociación, no causalidad.
-print(ggplot(cruce,aes(tasa_general_pct,fbcf_pct_pib,label=anio))+
-  geom_point(colour=paleta[2],size=2.7)+geom_text(vjust=-.75,size=3)+
-  scale_x_continuous(labels=scales::label_number(suffix='%',decimal.mark=','))+
-  scale_y_continuous(labels=scales::label_number(suffix='%',decimal.mark=','),
-    expand=expansion(mult=c(.08,.14)))+
-  labs(title='FBCF y tasa legal: comparación anual',
-    subtitle='Cada punto es un año; no identifica un efecto causal',
-    x='Tasa general de Primera Categoría',y='FBCF como porcentaje del PIB'))
-

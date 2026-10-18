@@ -156,7 +156,9 @@ Las series muestran diferencias por sexo y variaciones del mercado laboral. No i
 - Se usan las estimaciones anuales publicadas por el INE, sin promediar trimestres móviles superpuestos. El CSV conserva también niveles de ocupados, expresados en miles.
 - Las comparaciones regionales son descriptivas. El INE advierte que una mayor desagregación puede implicar menor precisión estadística; estos gráficos no incorporan intervalos de confianza ni evalúan significancia de las diferencias.
 
-**Para evaluar el incentivo:** se necesitan elegibilidad, remuneraciones, formalidad, duración de los empleos y una comparación que permita distinguir creación adicional de puestos y sustitución de trabajadores.
+::: {.callout-note collapse="true" title="Preguntas que estos datos dejan abiertas"}
+¿Quiénes serían elegibles, cuántos empleos formales adicionales se crearían y cuánto durarían? Responderlo requiere remuneraciones, informalidad, reglas de acceso y una comparación que distinga nuevas contrataciones de puestos que habrían existido de todas formas o de sustituciones entre trabajadores.
+:::
 
 ## Datos y fuente
 

@@ -21,6 +21,14 @@ Este sitio analiza de manera descriptiva los anuncios oficiales del Plan de Reco
 
 La edición incorpora cinco fuentes institucionales nuevas, procesamiento reproducible, comprobaciones de consistencia y cinco páginas de diagnóstico. También actualiza las secciones de empleo público y salud. Las preguntas aún abiertas se presentan como límites de cada análisis, no como resultados.
 
+## Criterios editoriales
+
+Una serie se incorpora cuando tiene una institución identificable, una unidad que puede explicarse, una versión que puede conservarse y una relación directa con la pregunta de la página. Se privilegia la fuente pública institucional y se documenta la transformación desde el archivo disponible hasta el gráfico. La selección no busca reunir todos los indicadores posibles: busca que cada cifra incluida pueda rastrearse y que su límite sea visible.
+
+La versión actual deja fuera indicadores o cruces que requieren una verificación adicional. Entre ellos están el balance estructural y las series del Consejo Fiscal Autónomo; la conciliación de cada archivo de Fonasa con su descarga institucional exacta; y los intervalos de confianza de las estimaciones regionales de la ENE. También queda pendiente contrastar el articulado vigente y su informe financiero. Estas ausencias se declaran para no presentar como terminada una evaluación que todavía no lo está.
+
+Las páginas de **empleo público** y **salud** se conservan como contexto complementario del proyecto original. Aportan antecedentes institucionales, pero no se usan como prueba directa a favor o en contra de una medida del plan de 2026.
+
 ## Fuentes y unidades
 
 | Archivo procesado | Institución / insumo | Unidad y cobertura | Período conservado |

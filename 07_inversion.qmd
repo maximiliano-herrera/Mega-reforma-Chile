@@ -57,18 +57,6 @@ La FBCF no es una medida incluida literalmente en el plan. Se usa como contexto 
 
 **Cómo leer el gráfico.** La tasa legal general subió gradualmente hasta **27% en 2020** y permaneció en ese nivel hasta 2025. Durante esos mismos años, la FBCF varió entre **22,6% y 25,7% del PIB**. Que la inversión cambie mientras la tasa legal permanece igual muestra que no existe una relación mecánica de uno a uno: también influyen la actividad económica, el costo del financiamiento, la incertidumbre y otros factores.
 
-## Asociación descriptiva
-
-Cada punto representa un año. Esta forma de visualizar permite observar si los años con cierta tasa legal coincidieron con niveles distintos de FBCF, pero **no permite concluir que la tasa causó ese nivel de inversión**.
-
-```{r 07-inversion-paso-5}
-#| fig-height: 5.5
-#| fig-alt: "Gráfico de dispersión que relaciona la tasa general legal de Primera Categoría y FBCF como porcentaje del PIB; cada punto está etiquetado con su año."
-#| fig-cap: "Fuentes: Banco Central de Chile y SII. Comparación descriptiva de 13 años, sin identificación causal."
-```
-
-**Cómo leer el gráfico.** La mayoría de los puntos de 2020 a 2025 comparte una tasa legal de **27%**, pero presenta distintos niveles de FBCF. Esta dispersión indica que la tasa corporativa, por sí sola, no basta para explicar la inversión observada. El gráfico permite describir coincidencias entre ambas variables, pero no estimar el efecto causal de subir o reducir el impuesto.
-
 ## Lectura y limitaciones
 
 El indicador relaciona la adquisición de activos fijos con el tamaño de la economía. Una variación puede deberse a cambios de inversión, del PIB o de precios relativos; no identifica obstáculos regulatorios por sí sola.
@@ -80,7 +68,9 @@ El indicador relaciona la adquisición de activos fijos con el tamaño de la eco
 - Desde 2017 existen regímenes con tasas distintas. La comparación utiliza la tasa general y conserva las tasas alternativas en el archivo de datos; no construye un promedio no ponderado de regímenes.
 - Trece observaciones anuales no bastan para separar el rol de la tasa legal de cambios simultáneos en actividad, precios, incertidumbre, inversión pública o condiciones internacionales.
 
-**Para evaluar los incentivos:** se necesitan expedientes y montos de proyectos, plazos de permisos, elegibilidad, costo tributario y una estrategia de comparación que separe el efecto del plan del ciclo económico.
+::: {.callout-note collapse="true" title="Preguntas que estos datos dejan abiertas"}
+¿Qué proyectos serían elegibles, cuánto invertirían adicionalmente y cuál sería el costo tributario? Se necesitan expedientes, montos, plazos de permisos y una estrategia de comparación que separe el efecto del plan del ciclo económico y de otros determinantes de la inversión.
+:::
 
 ## Datos y fuente
 

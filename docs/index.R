@@ -11,4 +11,19 @@ source("scripts/instalar_paquetes.R", encoding = "UTF-8")
 # Preparar las herramientas
 source("scripts/graficos.R", encoding="UTF-8")
 
-# Esta página es principalmente texto; no contiene gráficos propios.
+# Indicadores breves que se muestran en la portada. Se calculan desde los mismos
+# CSV que alimentan las páginas temáticas para evitar cifras escritas a mano.
+vivienda_portada <- leer('vivienda_nacional_abreviada')
+empleo_portada <- leer('empleo_ene') |> filter(anio == 2025)
+tributacion_portada <- leer('tributacion') |> filter(anio == 2025)
+finanzas_portada <- leer('finanzas_publicas') |> filter(anio == 2025)
+
+reduccion_deficit_vivienda <- 100 * (
+  vivienda_portada$deficit[vivienda_portada$anio == 2024] /
+    vivienda_portada$deficit[vivienda_portada$anio == 2002] - 1
+)
+brecha_ocupacion_sexo <-
+  empleo_portada$ocupacion_pct[empleo_portada$sexo == 'Hombres'] -
+  empleo_portada$ocupacion_pct[empleo_portada$sexo == 'Mujeres']
+primera_categoria_total <- 100 *
+  tributacion_portada$primera_categoria / tributacion_portada$total

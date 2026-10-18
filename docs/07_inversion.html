@@ -146,14 +146,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./01_empleo_publico.html" rel="" target="">
- <span class="menu-text">Capacidad estatal</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-contexto-complementario" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Contexto complementario</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-contexto-complementario">    
+        <li>
+    <a class="dropdown-item" href="./01_empleo_publico.html" rel="" target="">
+ <span class="dropdown-text">Empleo público</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./02_salud_fonasa.html" rel="" target="">
- <span class="menu-text">Salud</span></a>
+        <li>
+    <a class="dropdown-item" href="./02_salud_fonasa.html" rel="" target="">
+ <span class="dropdown-text">Salud</span></a>
   </li>  
+    </ul>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-método-y-fuentes" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
  <span class="menu-text">Método y fuentes</span>
@@ -192,7 +199,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#la-pregunta" id="toc-la-pregunta" class="nav-link active" data-scroll-target="#la-pregunta">La pregunta</a></li>
   <li><a href="#formación-bruta-de-capital-fijo-pib" id="toc-formación-bruta-de-capital-fijo-pib" class="nav-link" data-scroll-target="#formación-bruta-de-capital-fijo-pib">Formación bruta de capital fijo / PIB</a></li>
   <li><a href="#tasa-legal-e-inversión-física" id="toc-tasa-legal-e-inversión-física" class="nav-link" data-scroll-target="#tasa-legal-e-inversión-física">Tasa legal e inversión física</a></li>
-  <li><a href="#asociación-descriptiva" id="toc-asociación-descriptiva" class="nav-link" data-scroll-target="#asociación-descriptiva">Asociación descriptiva</a></li>
   <li><a href="#lectura-y-limitaciones" id="toc-lectura-y-limitaciones" class="nav-link" data-scroll-target="#lectura-y-limitaciones">Lectura y limitaciones</a></li>
   <li><a href="#datos-y-fuente" id="toc-datos-y-fuente" class="nav-link" data-scroll-target="#datos-y-fuente">Datos y fuente</a></li>
   </ul>
@@ -317,33 +323,6 @@ Resultado calculado
 </div>
 <p><strong>Cómo leer el gráfico.</strong> La tasa legal general subió gradualmente hasta <strong>27% en 2020</strong> y permaneció en ese nivel hasta 2025. Durante esos mismos años, la FBCF varió entre <strong>22,6% y 25,7% del PIB</strong>. Que la inversión cambie mientras la tasa legal permanece igual muestra que no existe una relación mecánica de uno a uno: también influyen la actividad económica, el costo del financiamiento, la incertidumbre y otros factores.</p>
 </section>
-<section id="asociación-descriptiva" class="level2">
-<h2 class="anchored" data-anchor-id="asociación-descriptiva">Asociación descriptiva</h2>
-<p>Cada punto representa un año. Esta forma de visualizar permite observar si los años con cierta tasa legal coincidieron con niveles distintos de FBCF, pero <strong>no permite concluir que la tasa causó ese nivel de inversión</strong>.</p>
-<div class="cell">
-<details>
-<summary>Código</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dispersión: cada punto representa un año; sirve para observar asociación, no causalidad.</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">ggplot</span>(cruce,<span class="fu">aes</span>(tasa_general_pct,fbcf_pct_pib,<span class="at">label=</span>anio))<span class="sc">+</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">colour=</span>paleta[<span class="dv">2</span>],<span class="at">size=</span><span class="fl">2.7</span>)<span class="sc">+</span><span class="fu">geom_text</span>(<span class="at">vjust=</span><span class="sc">-</span>.<span class="dv">75</span>,<span class="at">size=</span><span class="dv">3</span>)<span class="sc">+</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">labels=</span>scales<span class="sc">::</span><span class="fu">label_number</span>(<span class="at">suffix=</span><span class="st">'%'</span>,<span class="at">decimal.mark=</span><span class="st">','</span>))<span class="sc">+</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels=</span>scales<span class="sc">::</span><span class="fu">label_number</span>(<span class="at">suffix=</span><span class="st">'%'</span>,<span class="at">decimal.mark=</span><span class="st">','</span>),</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">expand=</span><span class="fu">expansion</span>(<span class="at">mult=</span><span class="fu">c</span>(.<span class="dv">08</span>,.<span class="dv">14</span>)))<span class="sc">+</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">'FBCF y tasa legal: comparación anual'</span>,</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">'Cada punto es un año; no identifica un efecto causal'</span>,</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">x=</span><span class="st">'Tasa general de Primera Categoría'</span>,<span class="at">y=</span><span class="st">'FBCF como porcentaje del PIB'</span>))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="07_inversion_files/figure-html/07-inversion-paso-5-1.png" class="img-fluid figure-img" alt="Gráfico de dispersión que relaciona la tasa general legal de Primera Categoría y FBCF como porcentaje del PIB; cada punto está etiquetado con su año." width="1280"></p>
-<figcaption class="figure-caption">Fuentes: Banco Central de Chile y SII. Comparación descriptiva de 13 años, sin identificación causal.</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<p><strong>Cómo leer el gráfico.</strong> La mayoría de los puntos de 2020 a 2025 comparte una tasa legal de <strong>27%</strong>, pero presenta distintos niveles de FBCF. Esta dispersión indica que la tasa corporativa, por sí sola, no basta para explicar la inversión observada. El gráfico permite describir coincidencias entre ambas variables, pero no estimar el efecto causal de subir o reducir el impuesto.</p>
-</section>
 <section id="lectura-y-limitaciones" class="level2">
 <h2 class="anchored" data-anchor-id="lectura-y-limitaciones">Lectura y limitaciones</h2>
 <p>El indicador relaciona la adquisición de activos fijos con el tamaño de la economía. Una variación puede deberse a cambios de inversión, del PIB o de precios relativos; no identifica obstáculos regulatorios por sí sola.</p>
@@ -355,7 +334,22 @@ Resultado calculado
 <li>Desde 2017 existen regímenes con tasas distintas. La comparación utiliza la tasa general y conserva las tasas alternativas en el archivo de datos; no construye un promedio no ponderado de regímenes.</li>
 <li>Trece observaciones anuales no bastan para separar el rol de la tasa legal de cambios simultáneos en actividad, precios, incertidumbre, inversión pública o condiciones internacionales.</li>
 </ul>
-<p><strong>Para evaluar los incentivos:</strong> se necesitan expedientes y montos de proyectos, plazos de permisos, elegibilidad, costo tributario y una estrategia de comparación que separe el efecto del plan del ciclo económico.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Preguntas que estos datos dejan abiertas">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Preguntas que estos datos dejan abiertas
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>¿Qué proyectos serían elegibles, cuánto invertirían adicionalmente y cuál sería el costo tributario? Se necesitan expedientes, montos, plazos de permisos y una estrategia de comparación que separe el efecto del plan del ciclo económico y de otros determinantes de la inversión.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="datos-y-fuente" class="level2">
 <h2 class="anchored" data-anchor-id="datos-y-fuente">Datos y fuente</h2>

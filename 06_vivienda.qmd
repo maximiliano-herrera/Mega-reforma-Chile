@@ -87,7 +87,7 @@ Cada par de barras compara la misma comuna, identificada por su código INE en e
 
 **Cómo leer el gráfico.** Cada par de barras compara la misma comuna en 2017 y 2024. El ranking se determina por el **aumento en número de requerimientos**, no por su tasa porcentual; por ello, las comunas grandes tienen más posibilidades de aparecer aunque su deterioro proporcional no sea el mayor. La etiqueta porcentual muestra cuánto representa cada comuna dentro del déficit nacional del año correspondiente.
 
-La lista describe los mayores aumentos observados, pero no identifica una causa. Un aumento puede combinar cambios en el número y composición de hogares, hacinamiento, allegamiento, condiciones de las viviendas y el modo en que el Censo mide esos componentes. Para evaluar una política específica habría que incorporar precios, oferta de viviendas, ingresos, migración, permisos y ejecución de programas en cada comuna.
+La lista describe los mayores aumentos observados, pero no identifica una causa. Un aumento puede combinar cambios en el número y composición de hogares, hacinamiento, allegamiento, condiciones de las viviendas y el modo en que el Censo mide esos componentes.
 
 ## Precauciones y alcance
 
@@ -96,7 +96,10 @@ La lista describe los mayores aumentos observados, pero no identifica una causa.
 - Las cifras describen censos. No identifican qué parte del cambio produjo un gobierno, un subsidio u otra política; tampoco permiten atribuir resultados al plan de 2026.
 - La comparación mantiene una misma metodología. Los porcentajes se calculan con los valores sin redondear y se muestran con un decimal.
 - Este diagnóstico no identifica damnificados por incendios de 2026, obras pendientes, precios de vivienda nueva ni capacidad de pago. No estima el efecto de una reducción del IVA.
-- Para evaluar medidas concretas faltan catastros, avance de obras, costos, precios, acceso al crédito y una estrategia de comparación causal.
+
+::: {.callout-note collapse="true" title="Preguntas que estos datos dejan abiertas"}
+¿Qué hogares serían alcanzados por cada medida, cómo cambiarían los precios y cuánto avanzaría la reconstrucción? Se necesitan catastros, avance y costos de obras, oferta de viviendas, acceso al crédito y una comparación que permita distinguir el efecto de la política de otros cambios demográficos y económicos.
+:::
 
 ## Datos y reproducción
 

@@ -1,6 +1,6 @@
 ---
 title: "Empleo público y capacidad estatal"
-subtitle: "DIPRES · Promedio anual de cargos · 2021–2025"
+subtitle: "Contexto complementario · DIPRES · Promedio anual de cargos · 2021–2025"
 ---
 
 [Abrir el script R de esta página](01_empleo_publico.R).
@@ -57,7 +57,10 @@ El crecimiento desigual orienta dónde profundizar. No permite afirmar que exist
 - **Unidad:** promedio anual de cargos, no personas únicas ni fotografía al 31 de diciembre. Una persona puede desempeñar más de un cargo.
 - **Cobertura:** el archivo contiene exclusiones y reglas institucionales; no es un censo irrestricto de todo trabajador financiado por el Estado. Las notas excluyen senadores y diputados y aplican cobertura acotada a Fuerzas Armadas y de Orden.
 - **Comparabilidad:** las ediciones pueden revisar cifras y metodología. Esta página usa una sola edición y verifica que las dependencias sumen el total de cada año.
-- **Para evaluar recortes:** faltan remuneraciones, funciones, demanda de atención, productividad y consecuencias sobre los servicios. No se calculan ahorros a partir del número de cargos.
+
+::: {.callout-note collapse="true" title="Preguntas que estos datos dejan abiertas"}
+¿Qué funciones explican el aumento, cuánto cuestan y cómo se relacionan con la demanda y calidad de los servicios? Responderlo exige remuneraciones, funciones, productividad y resultados de atención. El número de cargos, por sí solo, no permite calcular ahorros ni identificar puestos prescindibles.
+:::
 
 ## Datos y fuente
 

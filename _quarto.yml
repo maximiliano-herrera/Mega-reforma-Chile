@@ -40,10 +40,12 @@ website:
             href: 06_vivienda.qmd
           - text: Inversión
             href: 07_inversion.qmd
-      - text: Capacidad estatal
-        href: 01_empleo_publico.qmd
-      - text: Salud
-        href: 02_salud_fonasa.qmd
+      - text: Contexto complementario
+        menu:
+          - text: Empleo público
+            href: 01_empleo_publico.qmd
+          - text: Salud
+            href: 02_salud_fonasa.qmd
       - text: Método y fuentes
         menu:
           - text: Metodología y fuentes

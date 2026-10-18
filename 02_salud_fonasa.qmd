@@ -92,6 +92,10 @@ El aumento describe un mayor volumen de cobertura registrado. **No demuestra mig
 - El gráfico de Isapres muestra movimientos agregados de contratos. No permite seguir a una persona entre sistemas, identificar la causa de cada término ni probar que un término termine en Fonasa.
 - Esta sección es contexto del proyecto previo, no una evaluación sanitaria ni causal del plan de 2026.
 
+::: {.callout-note collapse="true" title="Preguntas que estos datos dejan abiertas"}
+¿De dónde provienen los nuevos beneficiarios, cuánto usan las prestaciones y cómo cambia la capacidad de atención? Los archivos agregados no siguen personas entre Fonasa e Isapres. Antes de ampliar el análisis también se debe conciliar cada edición con su descarga institucional exacta y aclarar las claves repetidas de 2018–2020.
+:::
+
 ## Datos y trazabilidad
 
 [CSV por tramo](datos/fonasa_tramos.csv) · [Movimientos Isapres](datos/isapres_movimientos.csv) · [Auditoría de los ocho archivos](datos/auditoria_fonasa.csv) · [Procesamiento R](scripts/procesar_datos.R) · [Portal de datos abiertos de Fonasa](https://datosabiertos.fonasa.cl/dimensiones-beneficiarios/).
