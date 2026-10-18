@@ -17,7 +17,7 @@ knitr::read_chunk("02_salud_fonasa.R")
 
 ## La pregunta
 
-¿Cómo cambió el volumen de beneficiarios de Fonasa? Se conserva el pilar de salud iniciado en Gemini, con un alcance ajustado a lo que efectivamente contienen los archivos.
+¿Cómo cambió el volumen de beneficiarios de Fonasa? Esta sección describe el alcance que efectivamente permiten los archivos disponibles.
 
 ```{r 02-salud-fonasa-paso-2}
 #| include: false

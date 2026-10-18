@@ -15,13 +15,11 @@ knitr::read_chunk("metodologia.R")
 ```
 
 
-## Qué se acordó y qué sigue siendo una propuesta
+## Alcance de esta edición
 
-**Decisiones del autor:** desarrollar un portafolio de investigación en ciencia política; mantener R, Quarto y GitHub Pages; partir de una mirada general y continuar por temas; preservar empleo público y salud; centrar esta ampliación en el Plan de Reconstrucción Nacional de 2026.
+Este sitio analiza de manera descriptiva los anuncios oficiales del Plan de Reconstrucción Nacional de marzo y abril de 2026 con series institucionales disponibles hasta 2025, salvo vivienda, que usa el Censo 2024. La selección de temas responde a la información pública disponible y no equivale a una evaluación completa del articulado ni a una estimación de los efectos de las propuestas.
 
-**Hipótesis y propuestas de trabajo, todavía no resultados:** interpretar una transición general desde prestación estatal a subsidios a la demanda; vincular cobertura sanitaria con capacidad estatal; medir migración Isapre–Fonasa; analizar fallos judiciales y sostenibilidad. Estas líneas requieren contrastación. El traspaso de Gemini las mencionaba, pero eso no constituye evidencia empírica ni prueba de que formen parte de este plan.
-
-**Hecho en esta edición:** descarga de cinco fuentes institucionales nuevas; procesamiento reproducible; comprobaciones de consistencia; cinco páginas nuevas; actualización del empleo público y elaboración de una primera página descriptiva de Fonasa.
+La edición incorpora cinco fuentes institucionales nuevas, procesamiento reproducible, comprobaciones de consistencia y cinco páginas de diagnóstico. También actualiza las secciones de empleo público y salud. Las preguntas aún abiertas se presentan como límites de cada análisis, no como resultados.
 
 ## Fuentes y unidades
 

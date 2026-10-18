@@ -124,6 +124,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./metodologia.html" rel="" target="">
  <span class="menu-text">Método y fuentes</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./acerca.html" rel="" target="">
+ <span class="menu-text">Acerca del proyecto</span></a>
+  </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
 </div>
@@ -171,6 +175,19 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="index.R">Abrir el script R de esta página</a>.</p>
 <div class="hero">
 <p><strong>¿Qué respaldan los datos y qué sigue sin demostrarse?</strong> Este proyecto de ciencia política reúne series oficiales, las procesa en R y explica sus alcances. La evidencia descriptiva permite examinar problemas; evaluar si una medida concreta los resuelve exige más información.</p>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Alcance e independencia analítica">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Alcance e independencia analítica
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Versión analizada:</strong> anuncios oficiales del Plan de Reconstrucción Nacional de marzo y abril de 2026. <strong>Última revisión del sitio:</strong> 18 de octubre de 2026. El análisis es descriptivo e independiente: no estima efectos causales ni respalda las propuestas.</p>
+</div>
 </div>
 <section id="explorar-los-análisis" class="level2">
 <h2 class="anchored" data-anchor-id="explorar-los-análisis">Explorar los análisis</h2>
@@ -275,7 +292,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="cómo-leer-la-evidencia" class="level2">
 <h2 class="anchored" data-anchor-id="cómo-leer-la-evidencia">Cómo leer la evidencia</h2>
 <p>Las cifras llegan hasta <strong>2025</strong>, salvo vivienda (<strong>Censo 2024</strong>). Son antecedentes previos al plan. Cada página distingue el resultado calculado, su lectura y lo que no permite concluir. Los archivos depurados se descargan y los gráficos muestran su código R.</p>
-<p><a href="./metodologia.html">Revisar metodología, fuentes y decisiones del proyecto</a>.</p>
+<p><a href="./metodologia.html">Revisar metodología y fuentes</a> · <a href="./acerca.html">Conocer el propósito y la autoría del proyecto</a>.</p>
 
 
 </section>
@@ -513,7 +530,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp("https:\/\/titan1959\.github\.io\/Mega-reforma-Chile\/");
+      var filterRegex = new RegExp("https:\/\/maximiliano-herrera\.github\.io\/Mega-reforma-Chile\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
@@ -531,11 +548,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Maximiliano · Análisis reproducible con R y Quarto</div>   
-    <div class="nav-footer-center">
-      &nbsp;
-    </div>
-    <div class="nav-footer-right">Datos de diagnóstico · Edición 14 de septiembre de 2026</div>
+    <div class="nav-footer-left">Un proyecto de <a href="./acerca.html">Maximiliano Herrera</a> · análisis reproducible con R y Quarto</div>   
+    <div class="nav-footer-center"><a href="https://github.com/Titan1959/Mega-reforma-Chile">GitHub</a> · <a href="https://www.linkedin.com/in/maximiliano-herrera-1380661ba/">LinkedIn</a> · <a href="./index.html">Volver a la portada</a></div>
+    <div class="nav-footer-right">Versión analizada: anuncios de marzo y abril de 2026 · última revisión: 18 de octubre de 2026</div>
   </div>
 </footer>
 

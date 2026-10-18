@@ -12,6 +12,7 @@ project:
     - 06_vivienda.qmd
     - 07_inversion.qmd
     - metodologia.qmd
+    - acerca.qmd
   resources:
     - "*.R"
     - datos/**
@@ -20,7 +21,7 @@ project:
     - 07_inversion/impuesto_corporativo_fbcf.xlsx
 website:
   title: "Política para no políticos"
-  site-url: https://titan1959.github.io/Mega-reforma-Chile/
+  site-url: https://maximiliano-herrera.github.io/Mega-reforma-Chile/
   navbar:
     background: "#1a365d"
     left:
@@ -44,9 +45,12 @@ website:
         href: 02_salud_fonasa.qmd
       - text: Método y fuentes
         href: metodologia.qmd
+      - text: Acerca del proyecto
+        href: acerca.qmd
   page-footer:
-    left: "Maximiliano · Análisis reproducible con R y Quarto"
-    right: "Datos de diagnóstico · Edición 14 de septiembre de 2026"
+    left: "Un proyecto de [Maximiliano Herrera](acerca.qmd) · análisis reproducible con R y Quarto"
+    center: "[GitHub](https://github.com/Titan1959/Mega-reforma-Chile) · [LinkedIn](https://www.linkedin.com/in/maximiliano-herrera-1380661ba/) · [Volver a la portada](index.qmd)"
+    right: "Versión analizada: anuncios de marzo y abril de 2026 · última revisión: 18 de octubre de 2026"
 format:
   html:
     theme: flatly

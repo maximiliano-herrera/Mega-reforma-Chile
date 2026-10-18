@@ -1,5 +1,6 @@
 :root { --azul: #1a365d; --tinta: #233449; }
-body { color: var(--tinta); }
+html { overflow-x: clip; }
+body { color: var(--tinta); max-width: 100%; overflow-wrap: break-word; }
 h1,h2,h3 { color: var(--azul); }
 .quarto-title .subtitle { max-width: 760px; line-height: 1.5; }
 .hero { background: #edf2f7; border-left: 5px solid #bd5315; padding: 1.4rem 1.6rem; margin: 1.4rem 0 2rem; border-radius: 4px; }
@@ -8,7 +9,16 @@ h1,h2,h3 { color: var(--azul); }
 .card-tema h3 { font-size: 1.18rem; margin: 0 0 .5rem; }
 .card-tema p { margin-bottom: .4rem; font-size: .95rem; }
 table { font-size: .9rem; }
-.cell-output-display { overflow-x: auto; }
+.cell-output-display { max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .cell-output-display img { max-width: 100%; height: auto; }
 details.code-fold { margin-bottom: .8rem; }
-@media(max-width:650px) { .cards { grid-template-columns: 1fr; } .hero { padding: 1rem; } h1.title { font-size: 1.85rem; } }
+@media(max-width:650px) {
+  .cards { grid-template-columns: 1fr; }
+  .hero { padding: 1rem; }
+  h1.title { font-size: 1.85rem; }
+  .quarto-title .subtitle { font-size: 1rem; }
+  .quarto-figure { margin-left: 0; margin-right: 0; }
+  .cell-output-display { padding-bottom: .35rem; }
+  table { font-size: .82rem; }
+  .page-footer { font-size: .85rem; }
+}

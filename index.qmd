@@ -18,6 +18,10 @@ knitr::read_chunk("index.R")
 **¿Qué respaldan los datos y qué sigue sin demostrarse?** Este proyecto de ciencia política reúne series oficiales, las procesa en R y explica sus alcances. La evidencia descriptiva permite examinar problemas; evaluar si una medida concreta los resuelve exige más información.
 :::
 
+::: {.callout-note title="Alcance e independencia analítica"}
+**Versión analizada:** anuncios oficiales del Plan de Reconstrucción Nacional de marzo y abril de 2026. **Última revisión del sitio:** 18 de octubre de 2026. El análisis es descriptivo e independiente: no estima efectos causales ni respalda las propuestas.
+:::
+
 ## Explorar los análisis
 
 ::: cards
@@ -86,4 +90,4 @@ Hay **cinco nuevas secciones de diagnóstico**, además de empleo público y sal
 
 Las cifras llegan hasta **2025**, salvo vivienda (**Censo 2024**). Son antecedentes previos al plan. Cada página distingue el resultado calculado, su lectura y lo que no permite concluir. Los archivos depurados se descargan y los gráficos muestran su código R.
 
-[Revisar metodología, fuentes y decisiones del proyecto](metodologia.qmd).
+[Revisar metodología y fuentes](metodologia.qmd) · [Conocer el propósito y la autoría del proyecto](acerca.qmd).

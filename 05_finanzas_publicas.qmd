@@ -35,7 +35,7 @@ En 2025, los ingresos totales equivalen a **`r n(u$ingresos_pct_pib,1)`% del PIB
 #| fig-cap: "Cada punto representa un año. El eje marca los inicios y finales de los períodos presidenciales; las franjas no prueban que un gobierno cause los cambios observados."
 ```
 
-**Cómo leer el gráfico.** Las dos líneas expresan ingresos y gastos como porcentaje del PIB, lo que permite comparar su tamaño con el de la economía. En 2020 y 2021 la distancia se amplía porque los gastos superan ampliamente los ingresos; en 2022 los ingresos quedan por encima de los gastos; y entre 2023 y 2025 vuelve a observarse un déficit. Este indicador describe la magnitud fiscal relativa, pero no informa por sí solo si un gasto fue eficiente ni qué programa explica el cambio.
+**Cómo leer el gráfico.** Las dos líneas expresan ingresos y gastos como porcentaje del PIB, lo que permite comparar su tamaño con el de la economía. Las franjas identifican los períodos presidenciales para facilitar una comparación cronológica de los datos. En 2020 y 2021 la distancia se amplía porque los gastos superan ampliamente los ingresos; en 2022 los ingresos quedan por encima de los gastos; y entre 2023 y 2025 vuelve a observarse un déficit. El gráfico no atribuye esos resultados a una administración: también intervienen el ciclo económico, decisiones previas y shocks externos.
 
 ## Ingresos y gastos en millones de pesos de 2025
 

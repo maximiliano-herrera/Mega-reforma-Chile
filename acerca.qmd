@@ -1,0 +1,32 @@
+---
+title: "Acerca del proyecto"
+subtitle: "Propósito, autoría y criterios para leer la evidencia"
+---
+
+## Propósito
+
+**Política para no políticos** es un proyecto reproducible de análisis de políticas públicas. Reúne datos institucionales para ayudar a entender problemas que las propuestas públicas buscan abordar, distinguir lo que los datos muestran de lo que todavía debe evaluarse y permitir que cualquier persona revise el proceso.
+
+El sitio analiza los anuncios oficiales del Plan de Reconstrucción Nacional de marzo y abril de 2026. Su versión actual usa información disponible hasta 2025, salvo vivienda, que utiliza el Censo 2024. La fecha de la última revisión es el **18 de octubre de 2026**.
+
+::: {.callout-note title="Independencia analítica"}
+El análisis es descriptivo e independiente; no evalúa causalmente ni respalda las propuestas. La comparación de períodos presidenciales organiza las series en el tiempo y no asigna responsabilidad causal a los gobiernos.
+:::
+
+## Autor
+
+Un proyecto de **Maximiliano Herrera**, con análisis reproducible en R y Quarto.
+
+[Ver el repositorio en GitHub](https://github.com/Titan1959/Mega-reforma-Chile) · [Perfil de LinkedIn](https://www.linkedin.com/in/maximiliano-herrera-1380661ba/)
+
+## Datos, método y reproducción
+
+Cada página enlaza sus datos depurados, el código de procesamiento y las fuentes institucionales. Los archivos en `datos/` son generados por los scripts de R desde los originales disponibles en las carpetas temáticas; no sustituyen las publicaciones institucionales. Cuando un libro fue construido por el proyecto, esa condición se declara en la misma página y en [Método y fuentes](metodologia.qmd).
+
+Para reproducir el sitio, se abre `Proyecto.Rproj`, se instalan las dependencias mediante `scripts/instalar_paquetes.R` y se ejecuta `quarto render` desde la raíz. El [inventario de fuentes](fuentes/manifest.csv) documenta los archivos utilizados y sus huellas de verificación.
+
+## Uso de herramientas de IA
+
+Se utilizaron herramientas de IA como apoyo editorial y técnico. La selección de fuentes, el procesamiento de datos, la revisión de resultados y la responsabilidad final corresponden al autor.
+
+[Volver a la portada](index.qmd).
