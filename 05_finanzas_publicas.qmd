@@ -19,6 +19,16 @@ knitr::read_chunk("05_finanzas_publicas.R")
 
 ¿Cómo evolucionaron los ingresos, gastos y el balance efectivo del Gobierno Central desde 1990? El orden fiscal forma parte del anuncio de marzo. [Fuente del alcance](https://www.interior.gob.cl/noticias/2026/03/14/presidente-jose-antonio-kast-presenta-proyecto-de-ley-de-reconstruccion-nacional-junto-a-ministro-alvarado/).
 
+::: {.callout-tip title="Conceptos para leer esta página"}
+- **Gobierno Central Total:** parte del sector público medida por DIPRES; no incluye automáticamente municipios, empresas públicas ni todo el Estado.
+- **Ingreso público:** recursos que recibe el Gobierno Central, incluidos impuestos y otras operaciones registradas en el cuadro fiscal.
+- **Gasto público:** recursos desembolsados por el Gobierno Central en un año.
+- **Balance efectivo:** diferencia entre ingresos y gastos. Si es negativo hay déficit; si es positivo hay superávit.
+- **PIB:** tamaño anual de la economía. Un porcentaje del PIB permite comparar años de distinta escala.
+
+[Ver glosario completo](glosario.qmd).
+:::
+
 ```{r 05-finanzas-publicas-paso-2}
 #| include: false
 ```

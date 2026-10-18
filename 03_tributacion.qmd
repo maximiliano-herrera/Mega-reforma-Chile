@@ -19,6 +19,15 @@ knitr::read_chunk("03_tributacion.R")
 
 ¿Cuál era la recaudación antes de las propuestas de rebaja tributaria? El anuncio de abril plantea reducir la tasa corporativa de 27% a 23%. La recaudación agregada contextualiza la discusión, pero no calcula el efecto de cambiar esa tasa. [Fuente del anuncio](https://msgg.gob.cl/wp/2026/04/23/presidente-kast-firma-proyecto-de-ley-del-plan-de-reconstruccion-nacional-y-desarrollo-economico-y-social/).
 
+::: {.callout-tip title="Conceptos para leer esta página"}
+- **PIB:** valor de los bienes y servicios producidos en el país durante un período. Expresar impuestos como porcentaje del PIB permite compararlos con el tamaño de la economía.
+- **Recaudación tributaria:** dinero que el Estado obtiene mediante impuestos. No es igual al presupuesto total ni al gasto público.
+- **Impuesto de Primera Categoría:** impuesto que grava rentas empresariales. Es una referencia cercana a la tributación corporativa, pero no representa toda la recaudación de Renta.
+- **IVA:** impuesto al valor agregado aplicado al consumo de bienes y servicios.
+
+[Ver glosario completo](glosario.qmd).
+:::
+
 ```{r 03-tributacion-paso-2}
 #| include: false
 ```

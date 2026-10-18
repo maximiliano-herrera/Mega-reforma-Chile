@@ -1,43 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://maximiliano-herrera.github.io/Mega-reforma-Chile/acerca.html</loc>
-    <lastmod>2026-10-18T04:07:35.003Z</lastmod>
-  </url>
-  <url>
-    <loc>https://maximiliano-herrera.github.io/Mega-reforma-Chile/07_inversion.html</loc>
-    <lastmod>2026-10-18T04:07:29.068Z</lastmod>
-  </url>
-  <url>
-    <loc>https://maximiliano-herrera.github.io/Mega-reforma-Chile/05_finanzas_publicas.html</loc>
-    <lastmod>2026-10-18T04:07:14.020Z</lastmod>
-  </url>
-  <url>
-    <loc>https://maximiliano-herrera.github.io/Mega-reforma-Chile/03_tributacion.html</loc>
-    <lastmod>2026-10-18T04:06:34.613Z</lastmod>
-  </url>
-  <url>
-    <loc>https://maximiliano-herrera.github.io/Mega-reforma-Chile/01_empleo_publico.html</loc>
-    <lastmod>2026-10-18T04:05:56.816Z</lastmod>
-  </url>
-  <url>
-    <loc>https://maximiliano-herrera.github.io/Mega-reforma-Chile/index.html</loc>
-    <lastmod>2026-10-18T04:05:46.927Z</lastmod>
-  </url>
-  <url>
-    <loc>https://maximiliano-herrera.github.io/Mega-reforma-Chile/02_salud_fonasa.html</loc>
-    <lastmod>2026-10-18T04:06:15.513Z</lastmod>
-  </url>
-  <url>
-    <loc>https://maximiliano-herrera.github.io/Mega-reforma-Chile/04_empleo_formal.html</loc>
-    <lastmod>2026-10-18T04:06:56.218Z</lastmod>
-  </url>
-  <url>
-    <loc>https://maximiliano-herrera.github.io/Mega-reforma-Chile/06_vivienda.html</loc>
-    <lastmod>2026-10-18T04:07:22.053Z</lastmod>
+    <loc>https://maximiliano-herrera.github.io/Mega-reforma-Chile/glosario.html</loc>
+    <lastmod>2026-10-18T04:20:13.190Z</lastmod>
   </url>
   <url>
     <loc>https://maximiliano-herrera.github.io/Mega-reforma-Chile/metodologia.html</loc>
-    <lastmod>2026-10-18T04:07:33.541Z</lastmod>
+    <lastmod>2026-10-18T04:20:10.365Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maximiliano-herrera.github.io/Mega-reforma-Chile/06_vivienda.html</loc>
+    <lastmod>2026-10-18T04:19:57.898Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maximiliano-herrera.github.io/Mega-reforma-Chile/04_empleo_formal.html</loc>
+    <lastmod>2026-10-18T04:19:40.573Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maximiliano-herrera.github.io/Mega-reforma-Chile/02_salud_fonasa.html</loc>
+    <lastmod>2026-10-18T04:19:19.534Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maximiliano-herrera.github.io/Mega-reforma-Chile/index.html</loc>
+    <lastmod>2026-10-18T04:19:04.260Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maximiliano-herrera.github.io/Mega-reforma-Chile/01_empleo_publico.html</loc>
+    <lastmod>2026-10-18T04:19:10.495Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maximiliano-herrera.github.io/Mega-reforma-Chile/03_tributacion.html</loc>
+    <lastmod>2026-10-18T04:19:27.757Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maximiliano-herrera.github.io/Mega-reforma-Chile/05_finanzas_publicas.html</loc>
+    <lastmod>2026-10-18T04:19:49.401Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maximiliano-herrera.github.io/Mega-reforma-Chile/07_inversion.html</loc>
+    <lastmod>2026-10-18T04:20:05.577Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maximiliano-herrera.github.io/Mega-reforma-Chile/acerca.html</loc>
+    <lastmod>2026-10-18T04:20:11.857Z</lastmod>
   </url>
 </urlset>

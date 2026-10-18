@@ -19,6 +19,15 @@ knitr::read_chunk("07_inversion.R")
 
 ¿Qué proporción del PIB representa la inversión en activos fijos antes del plan? El anuncio de abril contempla estabilidad tributaria para proyectos de inversión. Esta serie ofrece contexto macroeconómico, no una estimación del efecto de ese incentivo. [Fuente del anuncio](https://msgg.gob.cl/wp/2026/04/23/presidente-kast-firma-proyecto-de-ley-del-plan-de-reconstruccion-nacional-y-desarrollo-economico-y-social/).
 
+::: {.callout-tip title="Conceptos para leer esta página"}
+- **Formación bruta de capital fijo (FBCF):** inversión en activos que se usan para producir, como maquinaria, construcciones y equipos.
+- **FBCF/PIB:** peso de esa inversión dentro del tamaño anual de la economía; no es una tasa de crecimiento real.
+- **Precios corrientes:** valores calculados con los precios de cada año. Por eso una variación puede reflejar cantidades, precios o ambos.
+- **Tasa legal de Primera Categoría:** porcentaje establecido por ley para ese impuesto en el régimen general; no equivale a la tasa que efectivamente paga cada empresa.
+
+[Ver glosario completo](glosario.qmd).
+:::
+
 ```{r 07-inversion-paso-2}
 #| include: false
 ```

@@ -1,0 +1,74 @@
+---
+title: "Glosario para leer los gráficos"
+subtitle: "Conceptos económicos, fiscales y sociales en lenguaje simple"
+---
+
+Este glosario acompaña los gráficos del sitio. Las definiciones explican cómo se usan los términos aquí; no reemplazan las definiciones legales o metodológicas completas de cada institución. Cada página contiene además un mini glosario con los conceptos necesarios para esa lectura.
+
+## Conceptos fiscales y económicos
+
+**Balance efectivo.** Diferencia anual entre los ingresos y los gastos observados del Gobierno Central. Si los gastos son mayores que los ingresos, hay déficit; si son menores, hay superávit. No es lo mismo que deuda pública ni balance estructural.
+
+**Balance estructural.** Estimación fiscal que intenta separar efectos temporales del ciclo económico y de precios extraordinarios de recursos naturales. No es el indicador graficado en la página de finanzas públicas, que usa balance efectivo.
+
+**Déficit fiscal.** Situación en que los gastos del Gobierno Central superan sus ingresos en un año. Un déficit no dice por sí solo si un gasto fue adecuado o ineficiente.
+
+**Formación bruta de capital fijo (FBCF).** Inversión en activos usados para producir durante más de un período: maquinaria, equipos, construcciones y otras obras. No equivale a inversión extranjera directa ni a gasto público.
+
+**Gasto público.** Recursos que desembolsa el Gobierno Central durante un año. La serie del sitio usa el total publicado por DIPRES, incluidas las operaciones consideradas en ese cuadro.
+
+**Gobierno Central Total.** Cobertura institucional usada por DIPRES para sus cuentas fiscales. No equivale automáticamente a todo el sector público chileno: municipios, empresas públicas y otras entidades pueden quedar fuera de esa medida.
+
+**Ingreso público.** Recursos que recibe el Gobierno Central, como impuestos y otras operaciones registradas por DIPRES. No es sinónimo de recaudación tributaria, porque esta última incluye solamente impuestos.
+
+**IVA.** Impuesto al valor agregado aplicado al consumo de bienes y servicios. Es uno de los componentes de la recaudación tributaria.
+
+**PIB.** Producto interno bruto: valor de los bienes y servicios producidos en el país durante un período. Expresar una cifra como porcentaje del PIB permite compararla con el tamaño de la economía, pero no la convierte en una cantidad de dinero.
+
+**Punto porcentual.** Diferencia entre dos porcentajes. Si una tasa pasa de 20% a 23%, sube 3 puntos porcentuales; su aumento porcentual relativo es 15%.
+
+**Precios corrientes.** Valores calculados con los precios de cada año. Un cambio puede reflejar variaciones de cantidades, precios o ambos.
+
+**Primera Categoría.** Impuesto que grava rentas empresariales. Es la referencia más cercana al impuesto corporativo en las series del sitio, pero no representa toda la recaudación de Renta ni permite calcular mecánicamente el efecto de modificar una tasa legal.
+
+**Recaudación tributaria.** Dinero que el Estado obtiene mediante impuestos. Puede cambiar por actividad económica, bases tributarias, devoluciones, cumplimiento y normas legales, entre otros factores.
+
+**Superávit fiscal.** Situación en que los ingresos del Gobierno Central son mayores que sus gastos durante un año.
+
+**Tasa legal.** Porcentaje definido por ley para un impuesto. No necesariamente coincide con la tasa efectiva que enfrenta cada contribuyente, porque existen regímenes, bases, créditos y reglas distintas.
+
+## Mercado laboral
+
+**Desocupación.** Proporción de la fuerza de trabajo que está buscando empleo y no lo encuentra. No incluye a las personas que no buscan trabajo activamente.
+
+**Fuerza de trabajo.** Personas que están ocupadas o desocupadas: trabajan o buscan empleo activamente.
+
+**Inactividad.** Situación de una persona de 15 años o más que no trabaja ni busca empleo activamente. No debe confundirse con desocupación.
+
+**Ocupación.** Proporción de la población de 15 años o más que está trabajando. En el sitio no mide por sí sola calidad, formalidad, jornada ni remuneración del empleo.
+
+**Participación laboral.** Proporción de la población de 15 años o más que integra la fuerza de trabajo. Se obtiene al sumar ocupados y desocupados antes de dividir por esa población. No se deben sumar directamente las tasas publicadas de ocupación y desocupación, porque la última usa como denominador solo la fuerza de trabajo.
+
+## Vivienda y salud
+
+**Beneficiario Fonasa.** Persona registrada con cobertura en Fonasa en el período informado. No equivale a una atención médica ni permite por sí sola identificar el uso de prestaciones.
+
+**Déficit habitacional cuantitativo.** Estimación de requerimientos de nuevas viviendas según la metodología de MINVU. Considera componentes como viviendas irrecuperables, allegamiento y hacinamiento no ampliable.
+
+**Hogar.** Persona o grupo de personas que vive junto y comparte presupuesto de alimentación. Una vivienda puede albergar más de un hogar.
+
+**Isapre.** Institución de salud previsional. Los términos de contratos observados en una Isapre no permiten saber, sin información adicional, a qué sistema se trasladó una persona ni la causa del término.
+
+**Metodología abreviada.** Versión de la medición de déficit habitacional que MINVU homologa para comparar los censos de 2002, 2017 y 2024. No debe mezclarse con la metodología completa de 2024 para calcular tendencias.
+
+**Término de contrato Isapre.** Movimiento administrativo registrado en la cartera de Isapres. El término no implica necesariamente una decisión voluntaria, abandono del sistema o ingreso a Fonasa.
+
+**Tramo Fonasa.** Categoría administrativa utilizada por Fonasa. No es una medición directa de estado de salud ni una clasificación completa de ingresos.
+
+**Vivienda.** Unidad habitacional registrada por el Censo. No es sinónimo de hogar ni de persona.
+
+## Cómo usar los porcentajes
+
+Antes de comparar dos porcentajes, revisa qué mide cada uno y cuál es su denominador. Por ejemplo, ocupación se calcula sobre la población de 15 años o más, mientras desocupación se calcula sobre la fuerza de trabajo. El sitio escribe el denominador en títulos, subtítulos, etiquetas y explicaciones para evitar esa confusión.
+
+[Volver a la portada](index.qmd) · [Revisar metodología y fuentes](metodologia.qmd).

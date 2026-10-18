@@ -154,14 +154,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="./02_salud_fonasa.html" rel="" target="">
  <span class="menu-text">Salud</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./metodologia.html" rel="" target="">
- <span class="menu-text">Método y fuentes</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-método-y-fuentes" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Método y fuentes</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-método-y-fuentes">    
+        <li>
+    <a class="dropdown-item" href="./metodologia.html" rel="" target="">
+ <span class="dropdown-text">Metodología y fuentes</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./acerca.html" rel="" target="">
- <span class="menu-text">Acerca del proyecto</span></a>
+        <li>
+    <a class="dropdown-item" href="./glosario.html" rel="" target="">
+ <span class="dropdown-text">Glosario</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./acerca.html" rel="" target="">
+ <span class="dropdown-text">Acerca del proyecto</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
             <div class="quarto-navbar-tools ms-auto">
 </div>
@@ -213,6 +224,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="la-pregunta" class="level2">
 <h2 class="anchored" data-anchor-id="la-pregunta">La pregunta</h2>
 <p>¿Cómo evolucionaron los ingresos, gastos y el balance efectivo del Gobierno Central desde 1990? El orden fiscal forma parte del anuncio de marzo. <a href="https://www.interior.gob.cl/noticias/2026/03/14/presidente-jose-antonio-kast-presenta-proyecto-de-ley-de-reconstruccion-nacional-junto-a-ministro-alvarado/">Fuente del alcance</a>.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Conceptos para leer esta página">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Conceptos para leer esta página
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Gobierno Central Total:</strong> parte del sector público medida por DIPRES; no incluye automáticamente municipios, empresas públicas ni todo el Estado.</li>
+<li><strong>Ingreso público:</strong> recursos que recibe el Gobierno Central, incluidos impuestos y otras operaciones registradas en el cuadro fiscal.</li>
+<li><strong>Gasto público:</strong> recursos desembolsados por el Gobierno Central en un año.</li>
+<li><strong>Balance efectivo:</strong> diferencia entre ingresos y gastos. Si es negativo hay déficit; si es positivo hay superávit.</li>
+<li><strong>PIB:</strong> tamaño anual de la economía. Un porcentaje del PIB permite comparar años de distinta escala.</li>
+</ul>
+<p><a href="./glosario.html">Ver glosario completo</a>.</p>
+</div>
+</div>
 <div class="callout callout-style-default callout-note callout-titled" title="Resultado calculado">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1063,7 +1094,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">Un proyecto de <a href="./acerca.html">Maximiliano Herrera</a> · análisis reproducible con R y Quarto</div>   
-    <div class="nav-footer-center"><a href="https://github.com/Titan1959/Mega-reforma-Chile">GitHub</a> · <a href="https://www.linkedin.com/in/maximiliano-herrera-1380661ba/">LinkedIn</a> · <a href="./index.html">Volver a la portada</a></div>
+    <div class="nav-footer-center"><a href="https://github.com/maximiliano-herrera/Mega-reforma-Chile">GitHub</a> · <a href="https://www.linkedin.com/in/maximiliano-herrera-1380661ba/">LinkedIn</a> · <a href="./glosario.html">Glosario</a> · <a href="./index.html">Volver a la portada</a></div>
     <div class="nav-footer-right">Versión analizada: anuncios de marzo y abril de 2026 · última revisión: 18 de octubre de 2026</div>
   </div>
 </footer>

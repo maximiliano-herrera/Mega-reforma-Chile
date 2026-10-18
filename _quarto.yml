@@ -13,6 +13,7 @@ project:
     - 07_inversion.qmd
     - metodologia.qmd
     - acerca.qmd
+    - glosario.qmd
   resources:
     - "*.R"
     - datos/**
@@ -44,12 +45,16 @@ website:
       - text: Salud
         href: 02_salud_fonasa.qmd
       - text: Método y fuentes
-        href: metodologia.qmd
-      - text: Acerca del proyecto
-        href: acerca.qmd
+        menu:
+          - text: Metodología y fuentes
+            href: metodologia.qmd
+          - text: Glosario
+            href: glosario.qmd
+          - text: Acerca del proyecto
+            href: acerca.qmd
   page-footer:
     left: "Un proyecto de [Maximiliano Herrera](acerca.qmd) · análisis reproducible con R y Quarto"
-    center: "[GitHub](https://github.com/Titan1959/Mega-reforma-Chile) · [LinkedIn](https://www.linkedin.com/in/maximiliano-herrera-1380661ba/) · [Volver a la portada](index.qmd)"
+    center: "[GitHub](https://github.com/maximiliano-herrera/Mega-reforma-Chile) · [LinkedIn](https://www.linkedin.com/in/maximiliano-herrera-1380661ba/) · [Glosario](glosario.qmd) · [Volver a la portada](index.qmd)"
     right: "Versión analizada: anuncios de marzo y abril de 2026 · última revisión: 18 de octubre de 2026"
 format:
   html:

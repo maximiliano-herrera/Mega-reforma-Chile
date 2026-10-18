@@ -19,6 +19,14 @@ knitr::read_chunk("02_salud_fonasa.R")
 
 ¿Cómo cambió el volumen de beneficiarios de Fonasa? Esta sección describe el alcance que efectivamente permiten los archivos disponibles.
 
+::: {.callout-tip title="Conceptos para leer esta página"}
+- **Beneficiario Fonasa:** persona registrada con cobertura en Fonasa al cierre de diciembre; no representa una atención de salud.
+- **Tramo:** categoría administrativa de Fonasa. Los tramos no indican por sí solos el estado de salud de una persona.
+- **Término de contrato Isapre:** movimiento administrativo de un contrato. No identifica automáticamente una decisión voluntaria ni el destino posterior de la persona.
+
+[Ver glosario completo](glosario.qmd).
+:::
+
 ```{r 02-salud-fonasa-paso-2}
 #| include: false
 ```

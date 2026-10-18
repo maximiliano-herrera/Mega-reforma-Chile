@@ -28,6 +28,15 @@ knitr::read_chunk("06_vivienda.R")
 
 Definiciones y versiones metodológicas: [MINVU](https://catalogo.minvu.cl/cgi-bin/koha/opac-retrieve-file.pl?id=e0ccd280c209491477b8c3cef57910b4). La hoja “Presentación” del Excel describe los componentes y registra la corrección del 4 de diciembre de 2025.
 
+::: {.callout-tip title="Conceptos para leer esta página"}
+- **Vivienda:** unidad habitacional registrada por el Censo. No es lo mismo que un hogar.
+- **Hogar:** personas que viven juntas y comparten presupuesto de alimentación. En una vivienda puede haber más de un hogar.
+- **Déficit habitacional cuantitativo:** requerimientos de nuevas viviendas estimados por MINVU. No representa personas ni ventas de viviendas.
+- **Metodología abreviada:** versión homologada por MINVU para comparar 2002, 2017 y 2024.
+
+[Ver glosario completo](glosario.qmd).
+:::
+
 ::: {.callout-note title="Cómo interpretar las líneas y los porcentajes"}
 Solo hay **tres observaciones censales**. Los puntos son los datos; las líneas discontinuas los conectan, sin estimar los años intermedios. El eje respeta los intervalos de **15 años** y **7 años**.
 

@@ -154,14 +154,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="./02_salud_fonasa.html" rel="" target="">
  <span class="menu-text">Salud</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./metodologia.html" rel="" target="">
- <span class="menu-text">Método y fuentes</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-método-y-fuentes" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Método y fuentes</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-método-y-fuentes">    
+        <li>
+    <a class="dropdown-item" href="./metodologia.html" rel="" target="">
+ <span class="dropdown-text">Metodología y fuentes</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./acerca.html" rel="" target="">
- <span class="menu-text">Acerca del proyecto</span></a>
+        <li>
+    <a class="dropdown-item" href="./glosario.html" rel="" target="">
+ <span class="dropdown-text">Glosario</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./acerca.html" rel="" target="">
+ <span class="dropdown-text">Acerca del proyecto</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
             <div class="quarto-navbar-tools ms-auto">
 </div>
@@ -213,6 +224,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="la-pregunta" class="level2">
 <h2 class="anchored" data-anchor-id="la-pregunta">La pregunta</h2>
 <p>¿Cuál era la recaudación antes de las propuestas de rebaja tributaria? El anuncio de abril plantea reducir la tasa corporativa de 27% a 23%. La recaudación agregada contextualiza la discusión, pero no calcula el efecto de cambiar esa tasa. <a href="https://msgg.gob.cl/wp/2026/04/23/presidente-kast-firma-proyecto-de-ley-del-plan-de-reconstruccion-nacional-y-desarrollo-economico-y-social/">Fuente del anuncio</a>.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Conceptos para leer esta página">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Conceptos para leer esta página
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>PIB:</strong> valor de los bienes y servicios producidos en el país durante un período. Expresar impuestos como porcentaje del PIB permite compararlos con el tamaño de la economía.</li>
+<li><strong>Recaudación tributaria:</strong> dinero que el Estado obtiene mediante impuestos. No es igual al presupuesto total ni al gasto público.</li>
+<li><strong>Impuesto de Primera Categoría:</strong> impuesto que grava rentas empresariales. Es una referencia cercana a la tributación corporativa, pero no representa toda la recaudación de Renta.</li>
+<li><strong>IVA:</strong> impuesto al valor agregado aplicado al consumo de bienes y servicios.</li>
+</ul>
+<p><a href="./glosario.html">Ver glosario completo</a>.</p>
+</div>
+</div>
 <div class="callout callout-style-default callout-note callout-titled" title="Resultado calculado">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -635,7 +665,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">Un proyecto de <a href="./acerca.html">Maximiliano Herrera</a> · análisis reproducible con R y Quarto</div>   
-    <div class="nav-footer-center"><a href="https://github.com/Titan1959/Mega-reforma-Chile">GitHub</a> · <a href="https://www.linkedin.com/in/maximiliano-herrera-1380661ba/">LinkedIn</a> · <a href="./index.html">Volver a la portada</a></div>
+    <div class="nav-footer-center"><a href="https://github.com/maximiliano-herrera/Mega-reforma-Chile">GitHub</a> · <a href="https://www.linkedin.com/in/maximiliano-herrera-1380661ba/">LinkedIn</a> · <a href="./glosario.html">Glosario</a> · <a href="./index.html">Volver a la portada</a></div>
     <div class="nav-footer-right">Versión analizada: anuncios de marzo y abril de 2026 · última revisión: 18 de octubre de 2026</div>
   </div>
 </footer>

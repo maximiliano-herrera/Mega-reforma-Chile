@@ -19,6 +19,14 @@ knitr::read_chunk("01_empleo_publico.R")
 
 ¿Cómo cambió el número de cargos del Sector Público y qué proporción cumplía funciones permanentes o transitorias? Es un antecedente para discutir reorganización y gasto, pero no mide por sí solo eficiencia ni calidad de los servicios.
 
+::: {.callout-tip title="Conceptos para leer esta página"}
+- **Cargo:** puesto registrado por la fuente; no equivale necesariamente a una persona única.
+- **Promedio anual:** promedio de los cargos registrados durante un año, no una fotografía de un día específico.
+- **Función permanente o transitoria:** clasificación informada por DIPRES. Describe el tipo de función y no prueba, por sí sola, estabilidad contractual.
+
+[Ver glosario completo](glosario.qmd).
+:::
+
 ```{r 01-empleo-publico-paso-2}
 #| include: false
 ```

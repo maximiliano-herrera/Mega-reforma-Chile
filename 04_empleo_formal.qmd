@@ -19,6 +19,15 @@ knitr::read_chunk("04_empleo_formal.R")
 
 ¿Cómo evolucionaron la ocupación y la desocupación antes del incentivo al empleo formal anunciado en abril de 2026? [Fuente del anuncio](https://msgg.gob.cl/wp/2026/04/23/presidente-kast-firma-proyecto-de-ley-del-plan-de-reconstruccion-nacional-y-desarrollo-economico-y-social/).
 
+::: {.callout-tip title="Conceptos para leer esta página"}
+- **Ocupación:** proporción de la población de 15 años o más que está trabajando.
+- **Desocupación:** proporción de la fuerza de trabajo que busca empleo y no lo encuentra. No se calcula sobre toda la población.
+- **Fuerza de trabajo:** personas que trabajan o buscan trabajo activamente.
+- **Inactividad:** personas de 15 años o más que no trabajan ni buscan empleo activamente.
+
+[Ver glosario completo](glosario.qmd).
+:::
+
 ```{r 04-empleo-formal-paso-2}
 #| include: false
 ```

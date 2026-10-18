@@ -2,7 +2,7 @@
 
 Portafolio de Maximiliano: diagnóstico con datos institucionales del Plan de Reconstrucción Nacional anunciado en marzo–abril de 2026.
 
-Sitio: https://titan1959.github.io/Mega-reforma-Chile/
+Sitio: https://maximiliano-herrera.github.io/Mega-reforma-Chile/
 
 ## Reproducir
 
@@ -13,7 +13,7 @@ Sitio: https://titan1959.github.io/Mega-reforma-Chile/
 
 Los CSV depurados incluidos permiten renderizar sin ejecutar de nuevo el paso 3. Los originales voluminosos de Fonasa se conservan localmente y no se publican. El inventario `fuentes/manifest.csv` documenta los insumos. Los nuevos originales pequeños se incluyen en las carpetas temáticas. No se publican datos inventados ni se estiman efectos causales.
 
-Las páginas y las limitaciones metodológicas están en español. `metodologia.qmd` distingue decisiones previas, hipótesis y análisis realizados. Las series previas a 2026 no son evidencia de efectos del plan.
+Las páginas y las limitaciones metodológicas están en español. `metodologia.qmd` documenta fuentes, transformaciones y límites; `glosario.qmd` explica conceptos en lenguaje simple. Las series previas a 2026 no son evidencia de efectos del plan.
 
 
 ## Revisar los análisis en RStudio

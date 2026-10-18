@@ -17,7 +17,7 @@ El análisis es descriptivo e independiente; no evalúa causalmente ni respalda 
 
 Un proyecto de **Maximiliano Herrera**, con análisis reproducible en R y Quarto.
 
-[Ver el repositorio en GitHub](https://github.com/Titan1959/Mega-reforma-Chile) · [Perfil de LinkedIn](https://www.linkedin.com/in/maximiliano-herrera-1380661ba/)
+[Ver el repositorio en GitHub](https://github.com/maximiliano-herrera/Mega-reforma-Chile) · [Perfil de LinkedIn](https://www.linkedin.com/in/maximiliano-herrera-1380661ba/)
 
 ## Datos, método y reproducción
 

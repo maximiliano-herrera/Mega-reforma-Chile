@@ -90,4 +90,4 @@ Hay **cinco nuevas secciones de diagnóstico**, además de empleo público y sal
 
 Las cifras llegan hasta **2025**, salvo vivienda (**Censo 2024**). Son antecedentes previos al plan. Cada página distingue el resultado calculado, su lectura y lo que no permite concluir. Los archivos depurados se descargan y los gráficos muestran su código R.
 
-[Revisar metodología y fuentes](metodologia.qmd) · [Conocer el propósito y la autoría del proyecto](acerca.qmd).
+[¿No conoces un término? Consulta el glosario](glosario.qmd) · [Revisar metodología y fuentes](metodologia.qmd) · [Conocer el propósito y la autoría del proyecto](acerca.qmd).
