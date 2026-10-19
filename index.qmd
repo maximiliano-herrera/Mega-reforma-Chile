@@ -104,7 +104,7 @@ Formación bruta de capital fijo. Una referencia para examinar la reactivación.
 
 ## Próximas áreas de análisis
 
-El sitio crecerá cuando exista una pregunta pública clara, una fuente identificable y un análisis que pueda reproducirse. No se abrirán páginas vacías solo para completar una lista de temas.
+El proyecto seguirá creciendo con nuevas áreas y preguntas de política pública. Las próximas secciones se incorporarán a medida que cada análisis esté desarrollado, documentado y listo para ser revisado.
 
 ::: cards
 ::: {.card-tema .card-proximo}
@@ -139,7 +139,7 @@ Fuentes del alcance: [Ministerio del Interior, 14 de marzo de 2026](https://www.
 Hay **cinco nuevas secciones de diagnóstico**, además de empleo público y salud: **siete secciones temáticas con gráficos**. Esto no equivale a siete medidas evaluadas ni permite restar siete al total anunciado. Una misma sección aporta contexto para varias propuestas.
 
 | Propuesta o eje anunciado                             | Evidencia incorporada                | Qué falta para evaluarlo                                                            |
-|-------------------------------------------------------|--------------------------------------|-------------------------------------------------------------------------------------|
+|----------------------|------------------|---------------------------------|
 | Rebaja del impuesto corporativo                       | Recaudación agregada del SII         | Base gravada, incidencia distributiva y costo fiscal de la medida                   |
 | Incentivo al empleo formal                            | Mercado laboral anual del INE        | Contrataciones elegibles, informalidad desagregada y efecto adicional del incentivo |
 | IVA temporal para viviendas nuevas                    | Déficit habitacional regional        | Ventas, precios, stock disponible y traslado del beneficio al comprador             |
