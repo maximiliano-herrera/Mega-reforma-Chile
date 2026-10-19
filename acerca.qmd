@@ -5,9 +5,9 @@ subtitle: "Propósito, autoría y criterios para leer la evidencia"
 
 ## Propósito
 
-**Política para no políticos** es un proyecto reproducible de análisis de políticas públicas. Reúne datos institucionales para ayudar a entender problemas que las propuestas públicas buscan abordar, distinguir lo que los datos muestran de lo que todavía debe evaluarse y permitir una **interpretación informada y verificable**.
+**Política para no políticos** es un proyecto reproducible de análisis de políticas públicas. Reúne datos institucionales para ayudar a entender problemas que las propuestas públicas buscan abordar, distinguir lo que los datos muestran de lo que todavía debe evaluarse y permitir una **interpretación informada y verificable**. El sitio inicia con un dossier sobre el Plan de Reconstrucción Nacional y se ampliará gradualmente con temas permanentes de salud, Estado, economía, vivienda y relaciones internacionales.
 
-El sitio analiza los anuncios oficiales del Plan de Reconstrucción Nacional de marzo y abril de 2026. Su versión actual usa información disponible hasta 2025, salvo vivienda, que utiliza el Censo 2024. La fecha de la última revisión es el **18 de octubre de 2026**.
+El dossier actual analiza los anuncios oficiales del Plan de Reconstrucción Nacional de marzo y abril de 2026. Usa información disponible hasta 2025, salvo vivienda, que utiliza el Censo 2024. La fecha de la última revisión es el **18 de octubre de 2026**.
 
 ::: {.callout-note title="Independencia analítica"}
 El análisis es descriptivo e independiente; no evalúa causalmente ni respalda las propuestas. La comparación de períodos presidenciales organiza las series en el tiempo y no asigna responsabilidad causal a los gobiernos.

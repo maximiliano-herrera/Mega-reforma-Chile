@@ -1,6 +1,6 @@
 ---
-title: "El Plan de Reconstrucción Nacional, bajo la lupa"
-subtitle: "Evidencia institucional para entender el diagnóstico y discutir las propuestas de 2026."
+title: "Política para no políticos"
+subtitle: "Datos públicos y análisis reproducible para entender los problemas detrás del debate."
 ---
 
 [Abrir el script R de esta página](index.R).
@@ -15,11 +15,11 @@ knitr::read_chunk("index.R")
 ```
 
 ::: hero
-**¿Qué respaldan los datos y qué sigue sin demostrarse?** Este proyecto de ciencia política reúne series oficiales, las procesa en R y explica sus alcances. La evidencia descriptiva permite examinar problemas; evaluar si una medida concreta los resuelve exige más información.
+**Datos para entender lo público sin exigir conocimientos técnicos previos.** Este proyecto reúne fuentes institucionales, las procesa en R y explica sus alcances. El primer dossier examina el Plan de Reconstrucción Nacional; el sitio se ampliará gradualmente con temas de salud, Estado, economía, vivienda y relaciones internacionales.
 :::
 
-::: {.callout-note title="Alcance e independencia analítica"}
-**Versión analizada:** anuncios oficiales del Plan de Reconstrucción Nacional de marzo y abril de 2026. **Última revisión del sitio:** 18 de octubre de 2026. El análisis es descriptivo e independiente: no estima efectos causales ni respalda las propuestas.
+::: {.callout-note title="Dossier destacado: Plan de Reconstrucción Nacional"}
+El primer dossier reúne evidencia para entender el diagnóstico previo a las propuestas anunciadas en marzo y abril de 2026. **Última revisión del sitio:** 18 de octubre de 2026. El análisis es descriptivo e independiente: no estima efectos causales ni respalda las propuestas.
 :::
 
 ::: {.callout-tip title="No tienes que creerme: puedes verificarlo"}
@@ -30,7 +30,7 @@ Cada análisis enlaza la **fuente disponible**, el dato depurado y el código R 
 :::
 :::
 
-## Cuatro hallazgos para comenzar
+## Cuatro hallazgos del dossier destacado
 
 Estas cifras resumen antecedentes previos al plan. Orientan preguntas; no prueban el efecto de ninguna propuesta.
 
@@ -60,7 +60,9 @@ En 2025, el balance efectivo del Gobierno Central Total fue **`r n(finanzas_port
 :::
 :::
 
-## Explorar los análisis
+## Explorar por temas
+
+Los temas siguientes sostienen el dossier actual y servirán como base para futuros análisis. Cada página conserva sus fuentes, datos, código y límites.
 
 ::: cards
 ::: card-tema
@@ -96,17 +98,43 @@ Formación bruta de capital fijo. Una referencia para examinar la reactivación.
 ::: card-tema
 ### Contexto complementario
 
-[Empleo público](01_empleo_publico.qmd) y [salud](02_salud_fonasa.qmd) conservan antecedentes del trabajo original. No se presentan como evaluaciones directas de las medidas del plan.
+[Empleo público](01_empleo_publico.qmd) muestra una dimensión de la capacidad estatal; [salud](02_salud_fonasa.qmd), la evolución de la cobertura y de los movimientos de aseguramiento. Son antecedentes institucionales para interpretar el entorno del plan, no evaluaciones directas de sus medidas.
 :::
 :::
 
-## Qué versión del plan se analiza
+## Próximas áreas de análisis
+
+El sitio crecerá cuando exista una pregunta pública clara, una fuente identificable y un análisis que pueda reproducirse. No se abrirán páginas vacías solo para completar una lista de temas.
+
+::: cards
+::: {.card-tema .card-proximo}
+### Salud y protección social
+
+Cobertura, financiamiento, acceso y capacidad de atención. La sección actual de [salud](02_salud_fonasa.qmd) funciona como punto de partida y se ampliará al consolidar fuentes institucionales trazables.
+:::
+
+::: {.card-tema .card-proximo}
+### Relaciones internacionales
+
+Comercio exterior, inversión extranjera, migración, deuda externa y vínculos internacionales. El primer análisis se abrirá cuando una de estas preguntas tenga datos públicos comparables y una pregunta bien delimitada.
+:::
+
+::: {.card-tema .card-proximo}
+### Estado e instituciones
+
+Capacidad de ejecución, empleo público, gasto y desempeño institucional. [Empleo público](01_empleo_publico.qmd) ya ofrece un primer antecedente para desarrollar este tema.
+:::
+:::
+
+## Dossier destacado: Plan de Reconstrucción Nacional {#dossier-destacado}
+
+### Versión analizada
 
 El alcance de esta edición son los anuncios oficiales de **marzo y abril de 2026**. La presentación de marzo organiza el plan en cinco ejes y anuncia más de 40 medidas. La comunicación de abril detalla propuestas tributarias, laborales, de vivienda e inversión. Este sitio no certifica su vigencia legal ni incorpora automáticamente modificaciones posteriores.
 
 Fuentes del alcance: [Ministerio del Interior, 14 de marzo de 2026](https://www.interior.gob.cl/noticias/2026/03/14/presidente-jose-antonio-kast-presenta-proyecto-de-ley-de-reconstruccion-nacional-junto-a-ministro-alvarado/) y [Segegob, 23 de abril de 2026](https://msgg.gob.cl/wp/2026/04/23/presidente-kast-firma-proyecto-de-ley-del-plan-de-reconstruccion-nacional-y-desarrollo-economico-y-social/).
 
-## Cuánto está abordado
+### Cobertura del dossier
 
 Hay **cinco nuevas secciones de diagnóstico**, además de empleo público y salud: **siete secciones temáticas con gráficos**. Esto no equivale a siete medidas evaluadas ni permite restar siete al total anunciado. Una misma sección aporta contexto para varias propuestas.
 
@@ -122,10 +150,10 @@ Hay **cinco nuevas secciones de diagnóstico**, además de empleo público y sal
 | Orden fiscal                                          | Ingresos, gastos y balance DIPRES    | Informe financiero del articulado y efectos sobre servicios                         |
 | Seguridad e institucionalidad                         | Pendiente de análisis específico     | Texto preciso de las medidas e indicadores pertinentes                              |
 
-**Pendiente transversal:** construir un inventario exhaustivo del articulado y sus modificaciones para contar medidas terminadas y pendientes sin ambigüedad. Salud se conserva como contexto del proyecto original; no se presenta como una medida sanitaria comprobada de este plan.
+**Pendiente transversal:** construir un inventario exhaustivo del articulado y sus modificaciones para contar medidas terminadas y pendientes sin ambigüedad. Salud se presenta como un tema complementario y no como una medida sanitaria comprobada de este plan.
 
-## Cómo leer la evidencia
+## Cómo se construyen los análisis
 
-Las cifras llegan hasta **2025**, salvo vivienda (**Censo 2024**). Son antecedentes previos al plan. Cada página distingue el resultado calculado, su lectura y lo que no permite concluir. Los archivos depurados se descargan y los gráficos muestran su código R.
+Las cifras de este dossier llegan hasta **2025**, salvo vivienda (**Censo 2024**). Son antecedentes previos al plan. Cada página distingue el resultado calculado, su lectura y lo que no permite concluir. Los archivos depurados se descargan y los gráficos muestran su código R.
 
 [¿No conoces un término? Consulta el glosario](glosario.qmd) · [Revisar metodología y fuentes](metodologia.qmd) · [Conocer el propósito y la autoría del proyecto](acerca.qmd).

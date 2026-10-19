@@ -1,6 +1,6 @@
 # Política para no políticos
 
-Portafolio de Maximiliano: diagnóstico con datos institucionales del Plan de Reconstrucción Nacional anunciado en marzo–abril de 2026.
+Proyecto de Maximiliano: análisis reproducible de políticas públicas con datos institucionales. El primer dossier examina el Plan de Reconstrucción Nacional anunciado en marzo–abril de 2026; el sitio se ampliará gradualmente con temas de salud, Estado, economía, vivienda y relaciones internacionales.
 
 Sitio: https://maximiliano-herrera.github.io/Mega-reforma-Chile/
 

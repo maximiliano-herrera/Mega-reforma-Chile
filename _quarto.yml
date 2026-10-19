@@ -28,20 +28,22 @@ website:
     left:
       - text: Inicio
         href: index.qmd
-      - text: Análisis del plan
+      - text: Dossier destacado
+        menu:
+          - text: Plan de Reconstrucción Nacional
+            href: index.qmd#dossier-destacado
+      - text: Temas
         menu:
           - text: Tributación
             href: 03_tributacion.qmd
-          - text: Empleo
-            href: 04_empleo_formal.qmd
           - text: Finanzas públicas
             href: 05_finanzas_publicas.qmd
-          - text: Vivienda
-            href: 06_vivienda.qmd
           - text: Inversión
             href: 07_inversion.qmd
-      - text: Contexto complementario
-        menu:
+          - text: Empleo y trabajo
+            href: 04_empleo_formal.qmd
+          - text: Vivienda
+            href: 06_vivienda.qmd
           - text: Empleo público
             href: 01_empleo_publico.qmd
           - text: Salud
